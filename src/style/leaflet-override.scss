@@ -1,0 +1,54 @@
+/* leaflet.css overrides */
+
+// replace default cursors with gw2 cursors
+
+.leaflet-dragging .leaflet-grab,
+.leaflet-dragging .leaflet-grab .leaflet-interactive,
+.leaflet-dragging .leaflet-marker-draggable {
+	cursor: url('src/style/img/cursor-grab.png') 5 5, auto;
+}
+
+.leaflet-container,
+.leaflet-popup-pane,
+.leaflet-control,
+.leaflet-control-layers-overlays {
+	cursor: url('src/style/img/cursor.png') 1 1, auto;
+}
+
+.leaflet-control-layers-selector,
+.leaflet-interactive,
+.leaflet-control *,
+.leaflet-popup-close-button,
+.leaflet-popup-content a,
+.gw2map-navbox > span,
+.gw2map-navbox > div > span {
+	cursor: url('src/style/img/cursor-point.png') 8 3, auto;
+}
+
+// popup styles
+
+.leaflet-popup-content-wrapper {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+	color: #fff;
+}
+
+.leaflet-popup-content-wrapper a {
+	color: #d7b773;
+}
+
+.leaflet-popup-content {
+	font: 14px/1.25 CronosPro, sans-serif;
+	margin: 0.5em 1.5em;
+	line-height: 1.25em;
+	text-align: center;
+	max-width: 180px;
+}
+
+.leaflet-popup-tip {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+	padding: 0;
+}

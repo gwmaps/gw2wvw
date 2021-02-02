@@ -1,0 +1,13 @@
+/* leaflet fullscreen control plugin */
+
+.leaflet-control-fullscreen a {
+	background: #fff url('src/style/img/leaflet-control-fullscreen.png') no-repeat 0 0;
+}
+
+.leaflet-touch .leaflet-control-fullscreen a {
+	background-position: 2px 2px;
+}
+
+.leaflet-touch.leaflet-fullscreen-on .leaflet-control-fullscreen a {
+	background-position: 2px -24px;
+}

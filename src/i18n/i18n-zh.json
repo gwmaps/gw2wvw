@@ -1,0 +1,23 @@
+{
+	"i18n_zh": {
+		"wiki": "",
+		"attribution": "<attribution zh>",
+		"layers": {
+			"region_label": "<region_label zh>",
+			"region_poly": "<region_poly zh>",
+			"map_label": "<map_label zh>",
+			"map_poly": "<map_poly zh>",
+			"sector_label": "<sector_label zh>",
+			"sector_poly": "<sector_poly zh>",
+			"task_icon": "<task_icon zh>",
+			"task_poly": "<task_poly zh>",
+			"heropoint_icon": "<heropoint_icon zh>",
+			"waypoint_icon": "<waypoint_icon zh>",
+			"landmark_icon": "<landmark_icon zh>",
+			"vista_icon": "<vista_icon zh>",
+			"unlock_icon": "<unlock_icon zh>",
+			"jumpingpuzzle_icon": "<jumpingpuzzle_icon zh>",
+			"polylines": "<polylines zh>"
+		}
+	}
+}

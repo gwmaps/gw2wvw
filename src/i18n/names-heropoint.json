@@ -1,0 +1,43 @@
+{
+	"i18n_heropoint_names": {
+		"0-208": {
+			"en": "Skritt Stew"
+		},
+		"0-209": {
+			"en": "Veteran Wyvern (hero challenge)"
+		},
+		"0-210": {
+			"en": "Mysterious Energy"
+		},
+		"0-213": {
+			"en": "Skritt King (hero challenge)"
+		},
+		"0-214": {
+			"en": "Centaur Totem"
+		},
+		"0-215": {
+			"en": "Spider Egg Clutch"
+		},
+		"0-218": {
+			"en": "Skritt Shiny"
+		},
+		"0-219": {
+			"en": "Centaur Food"
+		},
+		"0-220": {
+			"en": "The Spider Queen"
+		},
+		"0-223": {
+			"en": "Krait Reliquary"
+		},
+		"0-224": {
+			"en": "Dredge Furnace"
+		},
+		"0-225": {
+			"en": "Harpy Nesting Grounds"
+		},
+		"0-226": {
+			"en": "Heart of Stone"
+		}
+	}
+}

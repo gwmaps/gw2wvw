@@ -1,0 +1,98 @@
+/* icons */
+
+// layer control icons (32x32)
+
+$path: 'src/style/img/'; // relative from project root
+
+.gw2map-layer-control.heropoint_icon {
+	background-image: url('#{$path}gw2map-layer-control.heropoint_icon.png');
+}
+
+.gw2map-layer-control.landmark_icon {
+	background-image: url('#{$path}gw2map-layer-control.landmark_icon.png');
+}
+
+.gw2map-layer-control.vista_icon {
+	background-image: url('#{$path}gw2map-layer-control.vista_icon.png');
+}
+
+.gw2map-layer-control.waypoint_icon {
+	background-image: url('#{$path}gw2map-layer-control.waypoint_icon.png');
+}
+
+.gw2map-layer-control.jumpingpuzzle_icon {
+	background-image: url('#{$path}gw2map-layer-control.jumpingpuzzle_icon.png');
+}
+
+
+// common (gw2api) map icons
+// waypoints, landmarks, tasks, vistas, heropoints, mastery points, events, adventures
+// naming scheme: "gw2map-{type}-icon", see GW2GeoJSON.js
+
+// heropoints
+.gw2map-heropoint-icon.core {
+	background-image: url('#{$path}gw2map-heropoint-icon.core.png');
+}
+
+.gw2map-heropoint-icon.core.completed {
+	background-image: url('#{$path}gw2map-heropoint-icon.core.completed.png');
+}
+
+// landmarks
+.gw2map-landmark-icon {
+	background-image: url('#{$path}gw2map-landmark-icon.png');
+}
+
+.gw2map-landmark-icon.completed {
+	background-image: url('#{$path}gw2map-landmark-icon.completed.png');
+}
+
+// vistas
+.gw2map-vista-icon {
+	background-image: url('#{$path}gw2map-vista-icon.png');
+}
+
+.gw2map-vista-icon.completed {
+	background-image: url('#{$path}gw2map-vista-icon.completed.png');
+}
+
+// waypoints
+.gw2map-waypoint-icon {
+	background-image: url('#{$path}gw2map-waypoint-icon.png');
+}
+
+.gw2map-waypoint-icon.completed {
+	background-image: url('#{$path}gw2map-waypoint-icon.completed.png');
+}
+
+.gw2map-waypoint-icon.completed:hover {
+	background-image: url('#{$path}gw2map-waypoint-icon.completed.hover.png');
+}
+
+.gw2map-waypoint-icon.contested {
+	background-image: url('#{$path}gw2map-waypoint-icon.contested.png');
+}
+
+// custom map icons
+// naming scheme: gw2map-marker-{thing}
+// determined in src/data/{thing}.json -> className
+
+.gw2map-marker-red {
+	background-image: url('#{$path}gw2map-marker-red.png');
+}
+
+.gw2map-marker-pink {
+	background-image: url('#{$path}gw2map-marker-pink.png');
+}
+
+.gw2map-marker-green {
+	background-image: url('#{$path}gw2map-marker-green.png');
+}
+
+.gw2map-marker-white {
+	background-image: url('#{$path}gw2map-marker-white.png');
+}
+
+.gw2map-marker-gold {
+	background-image: url('#{$path}gw2map-marker-gold.png');
+}

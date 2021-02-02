@@ -1,0 +1,31 @@
+{
+	"layer_jumpingpuzzle_icon": {
+		"type": "jumpingpuzzle",
+		"data": {
+			"95": [
+				{
+					"coord": [5838, 12484],
+					"name": "Emerald Sanctum"
+				}
+			],
+			"96": [
+				{
+					"coord": [13003, 11845],
+					"name": "Sapphire Sanctum"
+				}
+			],
+			"899": [
+				{
+					"coord": [11708, 13592],
+					"name": "Obsidian Sanctum"
+				}
+			],
+			"1315": [
+				{
+					"coord": [14727, 9329],
+					"name": "Armistice Bastion (jumping puzzle)"
+				}
+			]
+		}
+	}
+}

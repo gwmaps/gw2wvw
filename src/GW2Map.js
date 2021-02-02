@@ -17,7 +17,7 @@ import PrototypeElement from './util/PrototypeElement';
 import Utils from './util/Utils';
 // noinspection ES6PreferShortImport
 import {
-	Circle, Control, CRS, DivIcon, GeoJSON, Icon, LatLngBounds, Map, Marker, TileLayer
+	Control, CRS, DivIcon, GeoJSON, Icon, LatLngBounds, Map, Marker, TileLayer
 } from '../node_modules/leaflet/dist/leaflet-src.esm';
 
 export default class GW2Map{
@@ -84,18 +84,6 @@ export default class GW2Map{
 		this.options   = Utils.extend(this.options, options);
 		this.dataset   = new GW2MapDataset(this.container.dataset, this.options).getData();
 		this.i18n      = GW2MAP_I18N[this.options.lang] || GW2MAP_I18N['en'];
-
-		// adjust maxZoom if a dataset value is given
-		if(this.dataset.maxZoom){
-			this.options.maxZoom = this.dataset.maxZoom;
-		}
-
-		// limit maxZoom for continent 2 (PvP)
-		if(this.dataset.continentId === 2 && this.options.maxZoom > 6){
-			this.options.maxZoom = 6;
-		}
-
-		console.log(this.options);
 	}
 
 	/**
@@ -147,13 +135,8 @@ export default class GW2Map{
 		params.append('wiki', '1');
 		params.append('lang', this.dataset.language);
 
-		let query = '?' + params.toString();
-
 		// build the API URL for the requested floor
-		let url = this.options.apiBase + '/v2/continents/' + this.dataset.continentId + '/floors/' + this.dataset.floorId
-			+ (this.dataset.regionId ? '/regions/' + this.dataset.regionId : '')
-			+ (this.dataset.regionId && this.dataset.mapId ? '/maps/' + this.dataset.mapId : '')
-			+ query;
+		let url = this.options.apiBase + '/v2/continents/2/floors/3/regions/7?' + params.toString();
 
 		return [url];
 	}
@@ -164,71 +147,15 @@ export default class GW2Map{
 	 * @private
 	 */
 	_parseApiResponses(responses){
-		console.log(responses);
 		// main data is always the first response
 		let floordata = responses[0];
 
 		// determine the map bounds for the tile getter
-		this.viewRect = this._getMapBounds(floordata)
-
-		let events, floor49;
-		// in case of 2 responses, the second is either events or floor 49 / region 12
-		if(responses.length === 2){
-			if(responses[1].events){
-				events = responses[1].events
-			}
-			else if(responses[1].id){
-				floor49 = responses[1].regions['12']
-			}
-		}
-		// 3 responses: 2nd = events, 3rd = floor 49
-		else if(responses.length === 3){
-			events   = responses[1].events;
-			floor49  = responses[2].regions['12'];
-		}
-
-		// now merge the floor 49 data
-		if(this.dataset.floorId === 1 && floor49 && floordata.regions){
-			// if the region is already in the floor 1 response (1263,1268 why???), merge the maps
-			if(floordata.regions['12']){
-				Object.keys(floor49.maps).forEach(k => floordata.regions['12'].maps[k] = floor49.maps[k])
-			}
-			// otherwise just add the whole region
-			else{
-				floordata.regions['12'] = floor49;
-			}
-		}
+		this.viewRect = [[5120, 8192], [16384, 16384]];
 
 		// transform the response to GeoJSON feature collections - polyfill for https://github.com/arenanet/api-cdi/pull/62
 		return new GW2GeoJSON(floordata, this.dataset).getCollections();
 	}
-
-	/**
-	 * @param floordata
-	 * @returns {number[][]}
-	 * @private
-	 */
-	_getMapBounds(floordata){
-
-		if(this.dataset.customRect){
-			return this.dataset.customRect;
-		}
-
-		if(floordata.continent_rect){
-			return floordata.continent_rect;
-		}
-
-		if(floordata.clamped_view){
-			return floordata.clamped_view;
-		}
-
-		if(floordata.texture_dims){
-			return [[0, 0], floordata.texture_dims];
-		}
-
-		return [[0, 0], [49152, 49152]];
-	}
-
 
 	/**
 	 * parses the floor data and rencers it on the map
@@ -250,7 +177,7 @@ export default class GW2Map{
 		});
 
 		// the tile layer(s) @todo: map levels?
-		this.tileLayers /* ['floor 1'] */ = new TileLayer('{tilebase}/{continentId}/{floorId}/{z}/{x}/{y}.{tileExt}', {
+		this.tileLayers /* ['floor 1'] */ = new TileLayer('{tilebase}/2/3/{z}/{x}/{y}.{tileExt}', {
 			minZoom     : this.options.minZoom,
 			maxZoom     : this.options.maxZoom,
 			errorTileUrl: this.options.errorTile,
@@ -260,8 +187,6 @@ export default class GW2Map{
 				this.map.unproject([this.viewRect[1][0], this.viewRect[0][1]], this.options.maxZoom)
 			]),
 			tilebase    : this.options.tileBase,
-			continentId : this.dataset.continentId,
-			floorId     : this.dataset.customFloor || this.dataset.floorId,
 			tileExt     : this.options.tileExt,
 		}).addTo(this.map);
 
@@ -275,7 +200,7 @@ export default class GW2Map{
 		let coords = this.dataset.centerCoords || [];
 
 		// if coords are given, check if they're valid
-		if(coords.length === 2 && coords[0] > 0 && coords[0] <= 49152 && coords[1] > 0 && coords[1] <= 49152){
+		if(coords.length === 2 && coords[0] > 5120 && coords[0] <= 16384 && coords[1] > 8192 && coords[1] <= 16384){
 			center = this._p2ll(coords);
 		}
 		// else get center from the map bounds
@@ -416,8 +341,7 @@ export default class GW2Map{
 				//noinspection RegExpRedundantEscape
 				let wikiname = p.name.toString()
 					.replace(/\.$/, '')
-					.replace(/\s/g, '_')
-					.replace(/(Mount\:_|Raid—|Schlachtzug\:_)/, ''); // @todo: i18n
+					.replace(/\s/g, '_');
 
 				content += '<a class="gw2map-wikilink" href="'
 					+ this.i18n.wiki + encodeURIComponent(wikiname)
@@ -555,11 +479,6 @@ export default class GW2Map{
 		let icon;
 		let p = feature.properties;
 
-		// create a circle on event markers if a radius is given
-		if(p.layertype === 'poly' && p.type === 'event' && p.radius){
-			return new Circle(coords, p.radius);
-		}
-
 		// common settings for all markers
 		let iconParams = {
 			pane: pane,
@@ -598,10 +517,7 @@ export default class GW2Map{
 		else{
 //			console.log(p);
 
-			if(p.type === 'masterypoint'){
-				iconParams.className += ' ' + p.region.toLowerCase()
-			}
-			else if(p.type === 'heropoint'){
+			if(p.type === 'heropoint'){
 				iconParams.className += p.id.split('-')[0] === '0' ? ' core' : ' expac';
 			}
 			else if(p.type === 'marker' && p.className){
@@ -630,7 +546,7 @@ export default class GW2Map{
 	_layerStyle(feature, pane){
 		let p = feature.properties;
 
-		if(Utils.in_array(pane, ['region_poly', 'map_poly', 'sector_poly', 'task_poly', 'event_poly'])){
+		if(Utils.in_array(pane, ['region_poly', 'map_poly', 'sector_poly'])){
 			return {
 				pane: pane,
 				stroke: true,

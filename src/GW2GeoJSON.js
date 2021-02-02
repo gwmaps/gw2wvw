@@ -30,7 +30,6 @@ export default class GW2GeoJSON{
 
 	map_rects = {};
 	floordata;
-	includeMaps;
 	language;
 
 	// @todo: deletme
@@ -45,19 +44,6 @@ export default class GW2GeoJSON{
 	constructor(floordata, dataset){
 		this.floordata     = floordata;
 		this.dataset       = dataset;
-
-
-		// @todo: deletme
-		if((!this.dataset.extraLayers || !this.dataset.extraLayers.length) && this.dataset.continentId === 1
-			&& Utils.in_array(this.dataset.floorId, [1,2,3,4]) && !this.dataset.regionId){
-			this.dataset.extraLayers = Object.keys(GW2MAP_EXTRA_LAYERS);
-		}
-
-		if(this.dataset.continentId === 1 && this.dataset.floorId === 1
-			&& !this.dataset.regionId && !this.dataset.includeMaps.length){
-			this.dataset.includeMaps = this.worldmap;
-		}
-
 		this.extraMarkers  = ['adventure_icon', 'jumpingpuzzle_icon', 'masterypoint_icon'].concat(this.dataset.extraLayers);
 	}
 
@@ -145,13 +131,6 @@ export default class GW2GeoJSON{
 			map.id  = Utils.intval(mapID);
 
 //			console.log('map', map.id, map.name);
-			// @todo
-			if(this.dataset.includeMaps.length > 0){
-				if(!Utils.in_array(map.id, this.dataset.includeMaps)){
-					return this;
-				}
-			}
-
 			this._map(map);
 		});
 

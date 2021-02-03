@@ -12,7 +12,8 @@
 			"landmark_icon": "Landmarks",
 			"vista_icon": "Vistas",
 			"jumpingpuzzle_icon": "Jumping Puzzles",
-			"polylines": "Polylines"
+			"polylines": "Polylines",
+			"objectives": "Objectives"
 		}
 	}
 }

@@ -12,7 +12,8 @@
 			"landmark_icon": "<landmark_icon fr>",
 			"vista_icon": "<vista_icon fr>",
 			"jumpingpuzzle_icon": "<jumpingpuzzle_icon fr>",
-			"polylines": "<polylines fr>"
+			"polylines": "<polylines fr>",
+			"objectives": "<objectives fr>"
 		}
 	}
 }

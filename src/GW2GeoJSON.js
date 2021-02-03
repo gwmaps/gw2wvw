@@ -38,8 +38,13 @@ export default class GW2GeoJSON{
 	 * @param {GW2MapDataset.dataset} dataset
 	 */
 	constructor(floordata, dataset){
-		this.floordata    = floordata;
-		this.dataset      = dataset;
+		this.floordata = floordata;
+		this.dataset   = dataset;
+
+		if((!this.dataset.extraLayers || !this.dataset.extraLayers.length)){
+			this.dataset.extraLayers = Object.keys(GW2MAP_EXTRA_LAYERS);
+		}
+
 		this.extraMarkers = ['adventure_icon', 'jumpingpuzzle_icon', 'masterypoint_icon'].concat(this.dataset.extraLayers);
 	}
 

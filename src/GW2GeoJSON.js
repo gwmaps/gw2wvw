@@ -65,6 +65,11 @@ export default class GW2GeoJSON{
 			this.featureCollections[layer] = new GeoJSONFeatureCollection();
 		}
 
+		// if name is an object, pick the selected language
+		if(name && typeof name === 'object'){
+			name = name[this.dataset.language] || '';
+		}
+
 		this.featureCollections[layer]
 			.addFeature(Utils.extend({
 				name     : (name || ''),

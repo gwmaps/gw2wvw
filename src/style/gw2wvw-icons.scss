@@ -2,27 +2,87 @@
 
 $path: 'src/style/img/'; // relative from project root
 
+// ruins
 .gw2map-ruins-icon{
 	background-image: url('#{$path}ruin-neutral.png');
 }
+.gw2map-ruins-icon.green{
+	background-image: url('#{$path}ruin-green.png');
+}
+.gw2map-ruins-icon.blue{
+	background-image: url('#{$path}ruin-blue.png');
+}
+.gw2map-ruins-icon.red{
+	background-image: url('#{$path}ruin-red.png');
+}
 
+// mercenary camps
 .gw2map-mercenary-icon{
 	background-image: url('#{$path}mercenary-neutral.png');
 }
+.gw2map-mercenary-icon.green{
+	background-image: url('#{$path}mercenary-green.png');
+}
+.gw2map-mercenary-icon.blue{
+	background-image: url('#{$path}mercenary-blue.png');
+}
+.gw2map-mercenary-icon.red{
+	background-image: url('#{$path}mercenary-red.png');
+}
 
+// supply camps
 .gw2map-camp-icon{
 	background-image: url('#{$path}camp-neutral.png');
 }
+.gw2map-camp-icon.green{
+	background-image: url('#{$path}camp-green.png');
+}
+.gw2map-camp-icon.blue{
+	background-image: url('#{$path}camp-blue.png');
+}
+.gw2map-camp-icon.red{
+	background-image: url('#{$path}camp-red.png');
+}
 
+// towers
 .gw2map-tower-icon{
 	background-image: url('#{$path}tower-neutral.png');
 }
+.gw2map-tower-icon.green{
+	background-image: url('#{$path}tower-green.png');
+}
+.gw2map-tower-icon.blue{
+	background-image: url('#{$path}tower-blue.png');
+}
+.gw2map-tower-icon.red{
+	background-image: url('#{$path}tower-red.png');
+}
 
+// keeps
 .gw2map-keep-icon{
 	background-image: url('#{$path}keep-neutral.png');
 }
+.gw2map-keep-icon.green{
+	background-image: url('#{$path}keep-green.png');
+}
+.gw2map-keep-icon.blue{
+	background-image: url('#{$path}keep-blue.png');
+}
+.gw2map-keep-icon.red{
+	background-image: url('#{$path}keep-red.png');
+}
 
+// castle (stonemist)
 .gw2map-castle-icon{
 	background-image: url('#{$path}castle-neutral.png');
+}
+.gw2map-castle-icon.green{
+	background-image: url('#{$path}castle-green.png');
+}
+.gw2map-castle-icon.blue{
+	background-image: url('#{$path}castle-blue.png');
+}
+.gw2map-castle-icon.red{
+	background-image: url('#{$path}castle-red.png');
 }
 

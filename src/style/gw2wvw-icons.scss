@@ -1,0 +1,28 @@
+/* WvW icons */
+
+$path: 'src/style/img/'; // relative from project root
+
+.gw2map-ruins-icon{
+	background-image: url('#{$path}ruin-neutral.png');
+}
+
+.gw2map-mercenary-icon{
+	background-image: url('#{$path}mercenary-neutral.png');
+}
+
+.gw2map-camp-icon{
+	background-image: url('#{$path}camp-neutral.png');
+}
+
+.gw2map-tower-icon{
+	background-image: url('#{$path}tower-neutral.png');
+}
+
+.gw2map-keep-icon{
+	background-image: url('#{$path}keep-neutral.png');
+}
+
+.gw2map-castle-icon{
+	background-image: url('#{$path}castle-neutral.png');
+}
+

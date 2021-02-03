@@ -22,7 +22,6 @@ export default class GW2GeoJSON{
 		vista_icon: null,
 		unlock_icon: null,
 		jumpingpuzzle_icon: null,
-		region_label: null,
 		map_label: null,
 		sector_label: null,
 		sector_poly: null,
@@ -32,9 +31,6 @@ export default class GW2GeoJSON{
 	floordata;
 	language;
 
-	// @todo: deletme
-	worldmap = [38, 95, 96, 899, 968, 1099, 1315];
-
 	/**
 	 * GW2GeoJSON constructor
 	 *
@@ -42,9 +38,9 @@ export default class GW2GeoJSON{
 	 * @param {GW2MapDataset.dataset} dataset
 	 */
 	constructor(floordata, dataset){
-		this.floordata     = floordata;
-		this.dataset       = dataset;
-		this.extraMarkers  = ['adventure_icon', 'jumpingpuzzle_icon', 'masterypoint_icon'].concat(this.dataset.extraLayers);
+		this.floordata    = floordata;
+		this.dataset      = dataset;
+		this.extraMarkers = ['adventure_icon', 'jumpingpuzzle_icon', 'masterypoint_icon'].concat(this.dataset.extraLayers);
 	}
 
 	/**
@@ -82,31 +78,14 @@ export default class GW2GeoJSON{
 	 */
 	getCollections(){
 
-		// a response to floors
-		if(this.floordata.regions){
-			this._continent(this.floordata.regions);
-		}
-		// a regions response
-		else if(this.floordata.maps){
+		// we're expecting a regions response
+		if(this.floordata.maps){
 			this._region(this.floordata);
-		}
-		// an actual map response
-		else if(this.floordata.points_of_interest){
-			this._map(this.floordata);
+
+			return this.featureCollections;
 		}
 
-		return this.featureCollections;
-	}
-
-	/**
-	 * @param {*} continent
-	 * @returns {GW2GeoJSON}
-	 * @protected
-	 */
-	_continent(continent){
-		Object.keys(continent).forEach(regionID => this._region(continent[regionID]));
-
-		return this;
+		throw new Error('invalid API response');
 	}
 
 	/**
@@ -116,16 +95,6 @@ export default class GW2GeoJSON{
 	 */
 	_region(region){
 
-		this._addFeature('region_label', region.id, -1, region.name, {
-			type     : 'region',
-			layertype: 'label',
-		}, region.label_coord);
-		/*
-		this._addFeature('region_poly', region.id, -1, region.name, {
-			type     : 'region',
-			layertype: 'poly',
-		}, new GW2ContinentRect(region.continent_rect).getPoly(), 'Polygon');
-		*/
 		Object.keys(region.maps).forEach(mapID => {
 			let map = region.maps[mapID];
 			map.id  = Utils.intval(mapID);

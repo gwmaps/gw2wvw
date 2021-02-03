@@ -3,19 +3,14 @@
 		"wiki": "https://wiki-es.guildwars2.com/wiki/",
 		"attribution": "<attribution es>",
 		"layers": {
-			"region_label": "<region_label es>",
-			"region_poly": "<region_poly es>",
 			"map_label": "<map_label es>",
 			"map_poly": "<map_poly es>",
 			"sector_label": "<sector_label es>",
 			"sector_poly": "<sector_poly es>",
-			"task_icon": "<task_icon es>",
-			"task_poly": "<task_poly es>",
 			"heropoint_icon": "<heropoint_icon es>",
 			"waypoint_icon": "<waypoint_icon es>",
 			"landmark_icon": "<landmark_icon es>",
 			"vista_icon": "<vista_icon es>",
-			"unlock_icon": "<unlock_icon es>",
 			"jumpingpuzzle_icon": "<jumpingpuzzle_icon es>",
 			"polylines": "<polylines es>"
 		}

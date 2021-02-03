@@ -3,19 +3,14 @@
 		"wiki": "https://wiki-de.guildwars2.com/wiki/",
 		"attribution": "Kartendaten und Bilder",
 		"layers": {
-			"region_label": "Regionsnamen",
-			"region_poly": "Regionsgrenzen",
 			"map_label": "Kartennamen",
 			"map_poly": "Kartengrenzen",
 			"sector_label": "Sektornamen",
 			"sector_poly": "Sektorgrenzen",
-			"task_icon": "Aufgaben",
-			"task_poly": "Aufgabengrenzen",
 			"heropoint_icon": "Heldenherausforderungen",
 			"waypoint_icon": "Wegmarken",
 			"landmark_icon": "Sehenswürdigkeiten",
 			"vista_icon": "Vista",
-			"unlock_icon": "Dungeons & Raids",
 			"jumpingpuzzle_icon": "Sprungrätsel",
 			"polylines": "Polylinien"
 		}

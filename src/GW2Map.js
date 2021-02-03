@@ -254,7 +254,7 @@ export default class GW2Map{
 			}
 
 			// i hate this.
-			if(Utils.in_array(layer, ['region_label', 'map_label', 'sector_label'])){
+			if(Utils.in_array(layer, ['map_label', 'sector_label'])){
 				Object.keys(el.children).forEach(c => {
 					let origin = window.getComputedStyle(el.children[c]).perspectiveOrigin.split(' ');
 

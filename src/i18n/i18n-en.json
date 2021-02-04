@@ -13,7 +13,8 @@
 			"vista_icon": "Vistas",
 			"jumpingpuzzle_icon": "Jumping Puzzles",
 			"polylines": "Polylines",
-			"objectives": "Objectives"
+			"objective_icon": "Objectives",
+			"sentry_icon": "Sentries"
 		}
 	}
 }

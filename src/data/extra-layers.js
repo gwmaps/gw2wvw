@@ -7,10 +7,12 @@
  */
 
 import {layer_jumpingpuzzle_icon} from './jumpingpuzzle-icon.json';
+import {layer_sentry_icon} from './sentry-icon.json';
 import {objectives} from './objectives.json';
 
 const GW2MAP_EXTRA_LAYERS = {
 	jumpingpuzzle_icon: layer_jumpingpuzzle_icon,
+	sentry_icon: layer_sentry_icon,
 };
 
 const GW2_WVW_OBJECTIVES = objectives;

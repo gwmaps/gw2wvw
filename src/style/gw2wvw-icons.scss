@@ -2,6 +2,20 @@
 
 $path: 'src/style/img/'; // relative from project root
 
+// sentries
+.gw2map-sentry-icon, .gw2map-layer-control.sentry_icon{
+	background-image: url('#{$path}sentry-neutral.png');
+}
+//.gw2map-sentry-icon.green{
+//	background-image: url('#{$path}sentry-green.png');
+//}
+//.gw2map-sentry-icon.blue{
+//	background-image: url('#{$path}sentry-blue.png');
+//}
+//.gw2map-sentry-icon.red{
+//	background-image: url('#{$path}sentry-red.png');
+//}
+
 // ruins
 .gw2map-ruins-icon{
 	background-image: url('#{$path}ruin-neutral.png');

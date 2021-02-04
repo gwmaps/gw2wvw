@@ -13,7 +13,8 @@
 			"vista_icon": "Vista",
 			"jumpingpuzzle_icon": "Sprungrätsel",
 			"polylines": "Polylinien",
-			"objectives": "Ziele"
+			"objective_icon": "Ziele",
+			"sentry_icon": "Wachen"
 		}
 	}
 }

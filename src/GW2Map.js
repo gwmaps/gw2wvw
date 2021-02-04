@@ -25,7 +25,6 @@ export default class GW2Map{
 	// common default settings for all maps
 	options = {
 		containerClassName: 'gw2map',
-		linkboxClassName  : 'gw2map-linkbox',
 		navClassName      : 'gw2map-nav',
 		lang              : 'en',
 		attributionText   : ' &copy; <a href="http://www.arena.net/" target="_blank">ArenaNet</a>',
@@ -51,10 +50,8 @@ export default class GW2Map{
 			event_poly : 'rgba(210, 125, 40, 0.5)',
 		},
 		initLayers: [
-			'region_label',
 			'map_label',
-			'waypoint_icon',
-			'unlock_icon',
+			'objectives',
 		],
 		linkboxExclude: [],
 	};
@@ -64,7 +61,6 @@ export default class GW2Map{
 	layers  = {};
 	tileLayers = {};
 	layerControls;
-	linkbox;
 	container;
 	map;
 	viewRect;
@@ -93,15 +89,6 @@ export default class GW2Map{
 	 * @public
 	 */
 	init(){
-
-		// create an optional linkbox container and add it besides the map
-		if(this.dataset.linkbox){
-			this.linkbox = document.createElement('div');
-			this.linkbox.className = this.options.navClassName;
-			this.linkbox.style = 'max-height:'+this.container.clientHeight+'px;';
-			this.container.className += ' '+this.options.linkboxClassName;
-			this.container.parentNode.insertBefore(this.linkbox, this.container.nextSibling);
-		}
 
 		// i hate the Promise/fetch API so much don't @ me
 		Promise.all(this._getApiRequestURLs().map(url =>
@@ -387,10 +374,6 @@ export default class GW2Map{
 			layer.bindPopup(content);
 		}
 
-		// create optional linkbox navigation links
-		if(this.dataset.linkbox && Utils.in_array(feature.geometry.type, ['Point', 'MultiPoint'])){
-			this._linkboxItem(feature, layer, pane)
-		}
 	}
 
 	/**
@@ -405,65 +388,6 @@ export default class GW2Map{
 		return str
 			.replace(/\[\[([^\]\|]+)\]\]/gi, '<a href="' + this.i18n.wiki + '$1" target="_blank">$1</a>')
 			.replace(/\[\[([^\|]+)(\|)([^\]]+)\]\]/gi, '<a href="' + this.i18n.wiki + '$1" target="_blank">$3</a>');
-	}
-
-	/**
-	 * creates a clickable navigation item for the optional linkbox
-	 *
-	 * @param {*}       feature
-	 * @param {Layer}   layer
-	 * @param {string}  pane
-	 * @protected
-	 */
-	_linkboxItem(feature, layer, pane){
-		let p = feature.properties;
-
-		if(Utils.in_array(pane, this.options.linkboxExclude) || p.mapID === -1){
-			return;
-		}
-
-		let navid = 'gw2map-navbox-map-' + p.mapID;
-		let nav   = document.getElementById(navid);
-
-		if(!nav){
-			nav           = document.createElement('div');
-			nav.id        = navid;
-			nav.className = 'gw2map-navbox';
-			this.linkbox.appendChild(nav);
-		}
-
-		let paneContentID =  'gw2map-navbox-' + p.mapID + '-' + pane;
-		let paneContent   = document.getElementById(paneContentID);
-
-		if(!paneContent && pane !== 'map_label'){
-			paneContent    = document.createElement('div');
-			paneContent.id = paneContentID;
-			nav.appendChild(paneContent);
-		}
-
-		let item = document.createElement('span');
-
-		if(pane !== 'map_label'){
-			item.innerHTML = '<span class="gw2map-layer-control ' + pane + '"></span>';
-		}
-
-		item.innerHTML += (p.name || p.id || '-');
-
-		if(typeof layer.getLatLng === 'function'){
-
-			item.addEventListener('click', ev => {
-				let latlng = layer.getLatLng();
-				this.map
-					.panTo(latlng)
-					.openPopup(layer.getPopup(), latlng);
-			});
-
-			// insert the map label as first item
-			pane === 'map_label'
-				? nav.insertBefore(item, nav.firstChild)
-				: paneContent.appendChild(item);
-		}
-
 	}
 
 	/**

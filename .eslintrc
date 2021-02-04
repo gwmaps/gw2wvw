@@ -40,7 +40,8 @@
 		"GW2MAP_EXTRA_LAYERS": "readonly",
 		"GW2W_SECTOR_NAMES": "readonly",
 		"GW2W_POI_NAMES": "readonly",
-		"GW2W_HEROPOINT_NAMES": "readonly"
+		"GW2W_HEROPOINT_NAMES": "readonly",
+		"GW2_WVW_OBJECTIVES": "readonly"
 	},
 	"env": {
 		"browser": true,

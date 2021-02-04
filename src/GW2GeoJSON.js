@@ -211,7 +211,7 @@ export default class GW2GeoJSON{
 	 */
 	_sectors(sectors, mapID){
 
-		Object.keys(sectors).forEach(sectorId =>{
+		Object.keys(sectors).forEach(sectorId => {
 			let sector = sectors[sectorId];
 
 			// allow custom names for wiki disambuguation etc.
@@ -243,7 +243,7 @@ export default class GW2GeoJSON{
 	 */
 	_poi(pois, mapID){
 
-		Object.keys(pois).forEach(poiID =>{
+		Object.keys(pois).forEach(poiID => {
 			let poi = pois[poiID];
 
 			if(Utils.isset(() => GW2W_POI_NAMES[poi.type][poiID][this.dataset.language])){
@@ -274,7 +274,7 @@ export default class GW2GeoJSON{
 			return this;
 		}
 
-		heropoints.forEach(heropoint =>{
+		heropoints.forEach(heropoint => {
 			let name = '';
 
 			if(Utils.isset(() => GW2W_HEROPOINT_NAMES[heropoint.id][this.dataset.language])){
@@ -283,7 +283,7 @@ export default class GW2GeoJSON{
 
 			// https://github.com/arenanet/api-cdi/issues/329
 			this._addFeature('heropoint_icon', heropoint.id, mapID, name, {
-				type     : 'heropoint',
+				type: 'heropoint',
 			}, heropoint.coord)
 		});
 

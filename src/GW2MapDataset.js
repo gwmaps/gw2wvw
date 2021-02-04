@@ -15,7 +15,6 @@ export default class GW2MapDataset{
 		language    : {type: 'int',   default: 'en'},
 		zoom        : {type: 'int',   default: -1},
 		mapControls : {type: 'bool',  default: true},
-		linkbox     : {type: 'bool',  default: false},
 		initLayers  : {type: 'array', default: null, regex: /^([a-z_,\s]+)$/i},
 		extraLayers : {type: 'array', default: null, regex: /^([a-z_,\s]+)$/i},
 		centerCoords: {type: 'array', default: null, regex: /^([\[\]\s\d\.,]+)$/},

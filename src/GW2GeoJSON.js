@@ -8,7 +8,7 @@
 
 import GW2ContinentRect from './GW2ContinentRect';
 import {GW2W_POI_NAMES, GW2W_HEROPOINT_NAMES, GW2W_SECTOR_NAMES} from './i18n/poi-names';
-import {GW2MAP_EXTRA_LAYERS} from './data/extra-layers';
+import {GW2MAP_EXTRA_LAYERS, GW2_WVW_OBJECTIVES} from './data/extra-layers';
 import Utils from './util/Utils';
 import GeoJSONFeatureCollection from './util/GeoJSONFeatureCollection';
 
@@ -16,11 +16,11 @@ export default class GW2GeoJSON{
 
 	// fixed sort order for the main overlays
 	featureCollections = {
+		objective_icon: null,
 		landmark_icon: null,
 		waypoint_icon: null,
 		heropoint_icon: null,
 		vista_icon: null,
-		unlock_icon: null,
 		jumpingpuzzle_icon: null,
 		map_label: null,
 		sector_label: null,
@@ -143,6 +143,11 @@ export default class GW2GeoJSON{
 			._poi(map.points_of_interest, map.id)
 			._heropoint(map.skill_challenges, map.id)
 		;
+
+		if(Utils.isset(() => GW2_WVW_OBJECTIVES[map.id])){
+			this._objectives(GW2_WVW_OBJECTIVES[map.id], map.id);
+		}
+
 
 		if(this.extraMarkers.length){
 			this.extraMarkers.forEach(layer => {
@@ -281,6 +286,26 @@ export default class GW2GeoJSON{
 				type     : 'heropoint',
 			}, heropoint.coord)
 		});
+
+		return this;
+	}
+
+	/**
+	 * @param {*} objectives
+	 * @param {number} mapID
+	 * @returns {GW2GeoJSON}
+	 * @protected
+	 */
+	_objectives(objectives, mapID){
+
+		objectives.forEach(objective => {
+			this._addFeature('objective_icon', objective.id, mapID, objective.name, {
+				type     : objective.type,
+				sector   : objective.sector_id,
+				chat_link: objective.chat_link || false,
+			}, objective.coord);
+		});
+
 
 		return this;
 	}

@@ -7,9 +7,12 @@
  */
 
 import {layer_jumpingpuzzle_icon} from './jumpingpuzzle-icon.json';
-import {layer_objectives} from './objectives.json';
+import {objectives} from './objectives.json';
 
-export const GW2MAP_EXTRA_LAYERS = {
+const GW2MAP_EXTRA_LAYERS = {
 	jumpingpuzzle_icon: layer_jumpingpuzzle_icon,
-	objectives: layer_objectives,
 };
+
+const GW2_WVW_OBJECTIVES = objectives;
+
+export {GW2MAP_EXTRA_LAYERS, GW2_WVW_OBJECTIVES};

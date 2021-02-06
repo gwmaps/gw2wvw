@@ -73,6 +73,10 @@ $path: 'src/style/img/'; // relative from project root
 	background-image: url('#{$path}gw2map-waypoint-icon.contested.png');
 }
 
+.gw2map-jumpingpuzzle-icon {
+  background-image: url('#{$path}gw2map-jumpingpuzzle-icon.png');
+}
+
 // custom map icons
 // naming scheme: gw2map-marker-{thing}
 // determined in src/data/{thing}.json -> className

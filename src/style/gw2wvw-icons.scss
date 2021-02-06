@@ -92,7 +92,7 @@ $path: 'src/style/img/'; // relative from project root
 }
 
 // castle (stonemist)
-.gw2map-castle-icon{
+.gw2map-castle-icon, .gw2map-layer-control.objective_icon{
 	background-image: url('#{$path}castle-neutral.png');
 }
 .gw2map-castle-icon.green{

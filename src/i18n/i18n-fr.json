@@ -14,7 +14,8 @@
 			"jumpingpuzzle_icon": "<jumpingpuzzle_icon fr>",
 			"polylines": "<polylines fr>",
 			"objective_icon": "<objectives fr>",
-			"sentry_icon": "<sentry_icon fr>"
+			"sentry_icon": "<sentry_icon fr>",
+			"wvw_boss_icon": "<wvw_boss_icon fr>"
 		}
 	}
 }

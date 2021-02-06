@@ -1,0 +1,60 @@
+{
+	"layer_wvw_boss_icon": {
+		"type": "marker",
+		"className": "gw2map-boss-icon",
+		"data": {
+			"38": [
+				{
+					"coord": [11464, 14936],
+					"name": "Overgrown Grub"
+				},
+				{
+					"coord": [9646, 13536],
+					"name": "Champion Arboreal Spirit"
+				}
+			],
+			"95": [
+				{
+					"coord": [7979, 14187],
+					"name": "Veteran Harpy Warrior"
+				},
+				{
+					"coord": [6553, 14601],
+					"name": "Veteran Warg"
+				},
+				{
+					"coord": [5834, 12975],
+					"name": "Veteran Ice Wurm"
+				}
+			],
+			"96": [
+				{
+					"coord": [15151, 13542],
+					"name": "Veteran Harpy Warrior"
+				},
+				{
+					"coord": [13725, 13955],
+					"name": "Veteran Warg"
+				},
+				{
+					"coord": [12999, 12337],
+					"name": "Veteran Ice Wurm"
+				}
+			],
+			"1099": [
+				{
+					"coord": [11371, 10906],
+					"name": "Veteran Harpy Warrior"
+				},
+				{
+					"coord": [10507, 11859],
+					"name": "Veteran Warg"
+				},
+				{
+					"coord": [10088, 11075],
+					"name": "Veteran Plains Wurm"
+				}
+			]
+		}
+	}
+}

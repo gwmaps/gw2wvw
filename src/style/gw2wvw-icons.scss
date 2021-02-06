@@ -2,6 +2,11 @@
 
 $path: 'src/style/img/'; // relative from project root
 
+// bosses
+.gw2map-boss-icon, .gw2map-layer-control.wvw_boss_icon{
+	background-image: url('#{$path}boss.png');
+}
+
 // sentries
 .gw2map-sentry-icon, .gw2map-layer-control.sentry_icon{
 	background-image: url('#{$path}sentry-neutral.png');

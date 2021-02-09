@@ -82,9 +82,6 @@ export default class GW2Map{
 	guilds = {};
 	currentMatch;
 
-	// these sectors have fixed colors
-	homeSectors = [850, 993, 974, 1350, 836, 980, 1000, 1311, 845, 977, 997, 1343];
-
 	/**
 	 * GW2Map constructor.
 	 *
@@ -574,7 +571,7 @@ export default class GW2Map{
 
 		// assign sectors to the layer element
 		this.layers.sector_poly.eachLayer(layer => {
-			if(maps.includes(layer.feature.properties.mapID) && !this.homeSectors.includes(layer.feature.properties.id)){
+			if(maps.includes(layer.feature.properties.mapID)){
 				this.sectorElements[layer.feature.properties.id] = layer;
 			}
 		});
@@ -680,14 +677,7 @@ export default class GW2Map{
 				objectiveElement.setPopupContent(this._objectivePopup(objectiveElement.feature.properties, owner, objective));
 
 				// update the sector color
-				let sectorID = objectiveElement.feature.properties.sector;
-
-				// exclude permanent sectors from updating
-				if(this.homeSectors.includes(sectorID)){
-					return;
-				}
-
-				this.sectorElements[sectorID].setStyle({
+				this.sectorElements[objectiveElement.feature.properties.sector].setStyle({
 					color: this.options.colors.sector_team[owner],
 				});
 

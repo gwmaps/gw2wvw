@@ -24,7 +24,6 @@
 
 import GW2Map from './GW2Map';
 import AntPath from './leaflet-ext/AntPath';
-import CoordView from './leaflet-ext/CoordView';
 import Fullscreen from './leaflet-ext/Fullscreen';
 import Utils from './util/Utils';
 // noinspection ES6PreferShortImport
@@ -185,11 +184,6 @@ import {
 				this.on('unload', function(){
 					DomEvent.off(document, fullscreenchange, onFullscreenChange);
 				});
-			}
-
-			// CoordView
-			if (this.options.coordView) {
-				new CoordView().addTo(this);
 			}
 
 		});

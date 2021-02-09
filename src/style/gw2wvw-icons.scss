@@ -2,9 +2,48 @@
 
 $path: 'src/style/img/'; // relative from project root
 
+// guild upgrades
+.gw2map-guild-upgrade{
+	width: 32px;
+	height: 32px;
+	margin: 2px 4px 0 0;
+	border: #d7b773 1px solid;
+}
+
+// objective tiers
+.gw2map-objective-tier{
+	position: relative;
+	left: 0 !important;
+	top: -42% !important;
+}
+
+.gw2map-objective-tier.t1{
+	background-image: url('#{$path}objective-t1.png');
+}
+.gw2map-objective-tier.t2{
+	background-image: url('#{$path}objective-t2.png');
+}
+.gw2map-objective-tier.t3{
+	background-image: url('#{$path}objective-t3.png');
+}
+
 // bosses
 .gw2map-boss-icon, .gw2map-layer-control.wvw_boss_icon{
 	background-image: url('#{$path}boss.png');
+}
+
+// dolyaks
+.gw2map-dolyak-icon{
+  background-image: url('#{$path}dolyak-neutral.png');
+}
+.gw2map-dolyak-icon.green{
+	background-image: url('#{$path}dolyak-green.png');
+}
+.gw2map-dolyak-icon.blue{
+	background-image: url('#{$path}dolyak-blue.png');
+}
+.gw2map-dolyak-icon.red{
+	background-image: url('#{$path}dolyak-red.png');
 }
 
 // sentries

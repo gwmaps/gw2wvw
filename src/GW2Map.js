@@ -10,14 +10,16 @@ import GeoJSONFeatureCollection from './util/GeoJSONFeatureCollection';
 import GW2MapDataset from './GW2MapDataset';
 import GW2GeoJSON from './GW2GeoJSON';
 import GW2ContinentRect from './GW2ContinentRect';
-import {GW2MAP_I18N} from './i18n/i18n';
+import {GW2MAP_I18N, GW2_GUILD_UPGRADES, GW2_WVW_WORLDS} from './i18n/i18n';
 import LabelMarker from './leaflet-ext/LabelMarker';
 import LabelIcon from './leaflet-ext/LabelIcon';
+import WorldSelect from './leaflet-ext/WorldSelect';
+import PeriodicalExecuter from './util/PeriodicalExecuter';
 import PrototypeElement from './util/PrototypeElement';
 import Utils from './util/Utils';
 // noinspection ES6PreferShortImport
 import {
-	Control, CRS, DivIcon, GeoJSON, Icon, LatLngBounds, Map, Marker, TileLayer
+	bind, Control, CRS, DivIcon, GeoJSON, Icon, LatLngBounds, Map, Marker, TileLayer
 } from '../node_modules/leaflet/dist/leaflet-src.esm';
 
 export default class GW2Map{
@@ -37,6 +39,8 @@ export default class GW2Map{
 		apiBase           : 'https://api.guildwars2.com',
 		tileBase          : 'https://tiles.guildwars2.com',
 		tileExt           : 'jpg',
+		matchup           : null,
+		matchRefresh      : 10,
 		errorTile         : 'data:image/png;base64,'
 			+'iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAAAAAB5Gfe6AAAAVElEQVR42u3BAQEAAACAkP6v7ggKAAAA'
 			+'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
@@ -52,7 +56,8 @@ export default class GW2Map{
 		},
 		initLayers: [
 			'map_label',
-			'objectives',
+			'objective_icon',
+			'sector_poly',
 		],
 		linkboxExclude: [],
 	};
@@ -66,6 +71,19 @@ export default class GW2Map{
 	map;
 	viewRect;
 	i18n;
+	id;
+
+	// WvW settings
+	matchUpdater;
+	matchWorlds = {};
+	matches = {};
+	objectiveElements = {};
+	sectorElements = {};
+	guilds = {};
+	currentMatch;
+
+	// these sectors have fixed colors
+	homeSectors = [850, 993, 974, 1350, 836, 980, 1000, 1311, 845, 977, 997, 1343];
 
 	/**
 	 * GW2Map constructor.
@@ -81,6 +99,8 @@ export default class GW2Map{
 		this.options   = Utils.extend(this.options, options);
 		this.dataset   = new GW2MapDataset(this.container.dataset, this.options).getData();
 		this.i18n      = GW2MAP_I18N[this.options.lang] || GW2MAP_I18N['en'];
+		// set matchup precedence
+		this.options.matchup = this.dataset.matchup || this.options.matchup || null;
 	}
 
 	/**
@@ -108,7 +128,8 @@ export default class GW2Map{
 		))
 		.then(responses => this._parseApiResponses(responses))
 		.then(featureCollections => this._renderFloor(featureCollections))
-		.catch(error => console.log('(╯°□°）╯彡┻━┻ ', error))
+		.then(() => this._renderWvW())
+		.catch(error => console.log('(╯°□°）╯彡┻━┻ init ', error));
 
 		return this;
 	}
@@ -120,13 +141,16 @@ export default class GW2Map{
 	_getApiRequestURLs(){
 		let params = new URLSearchParams();
 		// @todo: optional wiki param (does this actually do anything?)
-		params.append('wiki', '1');
+//		params.append('wiki', '1');
 		params.append('lang', this.dataset.language);
 
+		let urls = [];
 		// build the API URL for the requested floor
-		let url = this.options.apiBase + '/v2/continents/2/floors/3/regions/7?' + params.toString();
+		urls.push(this.options.apiBase + '/v2/continents/2/floors/3/regions/7?' + params.toString());
+		// add the current wvw matches
+		urls.push(this.options.apiBase + '/v2/wvw/matches/overview?ids=all');
 
-		return [url];
+		return urls;
 	}
 
 	/**
@@ -135,14 +159,24 @@ export default class GW2Map{
 	 * @private
 	 */
 	_parseApiResponses(responses){
-		// main data is always the first response
-		let floordata = responses[0];
+		// the current matchups are in the second response
+		this.matchWorlds = GW2_WVW_WORLDS;
 
-		// determine the map bounds for the tile getter
-		this.viewRect = [[5120, 8192], [16384, 16384]];
+		responses[1].forEach(match => {
+			// assign world -> match id
+			['green', 'blue', 'red'].forEach(color => {
+				match.all_worlds[color].forEach(w => {
+					this.matchWorlds[w].match = match.id;
+					this.matchWorlds[w].color = color;
+				})
+			});
+
+			this.matches[match.id] = match;
+		});
 
 		// transform the response to GeoJSON feature collections - polyfill for https://github.com/arenanet/api-cdi/pull/62
-		return new GW2GeoJSON(floordata, this.dataset).getCollections();
+		// main data is always the first response
+		return new GW2GeoJSON(responses[0], this.dataset).getCollections();
 	}
 
 	/**
@@ -152,6 +186,8 @@ export default class GW2Map{
 	 * @protected
 	 */
 	_renderFloor(featureCollections){
+		// determine the map bounds for the tile getter (the one in the response for the wvw region is malformed)
+		this.viewRect = [[5120, 8192], [16384, 16384]];
 
 		// the map object
 		this.map = new Map(this.container, {
@@ -313,6 +349,12 @@ export default class GW2Map{
 	_onEachFeature(feature, layer, pane){
 		let p       = feature.properties;
 		let content = '';
+
+		if(pane === 'objective_icon'){
+			layer.bindPopup(this._objectivePopup(p, 'neutral', null));
+
+			return;
+		}
 
 		// add icon
 		if(p.layertype === 'icon'){
@@ -515,6 +557,219 @@ export default class GW2Map{
 	 */
 	_p2ll(coords){
 		return this.map.unproject(coords, this.options.maxZoom);
+	}
+
+	/**
+	 * @private
+	 */
+	_renderWvW(){
+		let maps = [38, 95, 96, 1099];
+
+		// assign WvW objectives and their respective sectors to the layer element
+		this.layers.objective_icon.eachLayer(layer => {
+			if(maps.includes(layer.feature.properties.mapID)){
+				this.objectiveElements[layer.feature.properties.id] = layer;
+			}
+		});
+
+		this.layers.sector_poly.eachLayer(layer => {
+			if(maps.includes(layer.feature.properties.mapID) && !this.homeSectors.includes(layer.feature.properties.id)){
+				this.sectorElements[layer.feature.properties.id] = layer;
+			}
+		});
+
+		// add the world select control
+		new WorldSelect(
+			this.matches,
+			this.matchWorlds,
+			this.options,
+			ev => this._startMatchUpdater(ev.target.value)
+		).addTo(this.map);
+
+		// fetch the match data and update objectives periodically (if a match is passed with the options)
+		this._startMatchUpdater(this.options.matchup);
+	}
+
+	/**
+	 * @private
+	 */
+	_startMatchUpdater(matchup){
+
+		if(!matchup || matchup === this.currentMatch){
+			return;
+		}
+
+		if(this.matchUpdater instanceof PeriodicalExecuter){
+			this.matchUpdater.stop();
+		}
+
+		this.currentMatch = matchup;
+
+		this.matchUpdater = new PeriodicalExecuter(bind(() => {
+
+			fetch(this.options.apiBase + '/v2/wvw/matches/' + matchup)
+				.then(response => {
+					if(response.ok){
+						return response.json();
+					}
+
+					throw new Error(response.statusText);
+				})
+				.then(json => this._updateObjectives(json))
+				.catch(error => console.log('(╯°□°）╯彡┻━┻ match ', error));
+
+		}, this), this.options.matchRefresh);
+
+		this.matchUpdater.start();
+	}
+
+	/**
+	 * @param {*} json
+	 * @private
+	 */
+	_updateObjectives(json){
+
+		json.maps.forEach(map => {
+			map.objectives.forEach(objective => {
+
+				if(!this.objectiveElements[objective.id]){
+					return;
+				}
+
+				// fetch the guild data - async may cause a delay of one refresh cycle - but idc?
+				if(objective.claimed_by && !this.guilds[objective.claimed_by]){
+					this._fetchGuild(objective.claimed_by);
+				}
+
+				// determine the objective tier
+				if(objective.yaks_delivered){
+					if(objective.yaks_delivered >= 80){
+						objective.tier = 3;
+					}
+					else if(objective.yaks_delivered >= 40){
+						objective.tier = 2;
+					}
+					else if(objective.yaks_delivered >= 20){
+						objective.tier = 1;
+					}
+					else{
+						objective.tier = 0;
+					}
+				}
+
+				// determine color
+				let owner = 'neutral';
+
+				if(['Green', 'Blue', 'Red'].includes(objective.owner)){
+					owner = objective.owner.toLowerCase();
+				}
+
+				// fetch & update the objective
+				let objectiveElement = this.objectiveElements[objective.id];
+
+				objectiveElement.setIcon(new DivIcon({
+					iconSize : null,
+					className: ('gw2map-icon gw2map-' + objective.type.toLowerCase() + '-icon ' + owner),
+					html     : objective.tier > 0
+						? '<div class="gw2map-icon gw2map-objective-tier t' + objective.tier + '"></div>'
+						: false,
+				}));
+
+				objectiveElement.setPopupContent(this._objectivePopup(objectiveElement.feature.properties, owner, objective));
+
+				// update the sector color
+				let sectorID = objectiveElement.feature.properties.sector;
+
+				// exclude permanent sectors from updating
+				if(this.homeSectors.includes(sectorID)){
+					return;
+				}
+
+				this.sectorElements[sectorID].setStyle({
+					color: this.options.colors.sector_team[owner],
+				});
+
+			});
+		});
+
+	}
+
+	/**
+	 * @param {string} guildID
+	 * @private
+	 */
+	_fetchGuild(guildID){
+		fetch(this.options.apiBase + '/v2/guild/' + guildID)
+			.then(response => {
+				if(response.ok){
+					return response.json();
+				}
+
+				throw new Error(response.statusText);
+			})
+			.then(json => this.guilds[guildID] = {name: json.name, tag: json.tag})
+			.catch(error => console.log('(╯°□°）╯彡┻━┻ guild ', error));
+	}
+
+	/**
+	 * @param {*}      properties
+	 * @param {string} color
+	 * @param {*|null} data
+	 * @returns {string}
+	 * @private
+	 */
+	_objectivePopup(properties, color, data){
+		let content = '<div class="gw2map-popup-icon gw2map-' + properties.type + '-icon ' + color + '"></div>'
+			+ this._wikiLinkName(properties.name);
+
+//		console.log(properties, color, data);
+
+		if(!data){
+			return content;
+		}
+
+		if(data.last_flipped){
+			content += '<br/>flipped: ' + new Date(data.last_flipped).toLocaleString();
+		}
+
+		if(data.claimed_at){
+			content += '<br/>claimed: ' + new Date(data.claimed_at).toLocaleString();
+		}
+
+		if(this.guilds[data.claimed_by]){
+			let guild = this.guilds[data.claimed_by];
+			content += '<br/>' + guild.name + ' [' + guild.tag + ']';
+		}
+
+		if(data.yaks_delivered){
+			let t = data.tier > 0 ? ' (T' + data.tier + ')' : ''; // @todo: tier translations, icons
+
+			content += '<br/><div class="gw2map-popup-icon gw2map-dolyak-icon ' + color + '"></div> ' + data.yaks_delivered + t;
+		}
+
+		if(data.guild_upgrades){
+			let improvements = '';
+			let tactics = '';
+
+			data.guild_upgrades.forEach(u => {
+				let name = GW2_GUILD_UPGRADES[u]['name'][this.options.lang];
+				let icon = '<img alt="' + name +'" title="' + name +'" src="' + GW2_GUILD_UPGRADES[u]['icon'] + '" '
+					+ 'class="gw2map-guild-upgrade"' + '/>';
+
+				// improvements
+				if([183, 365, 147, 307, 306, 418, 562, 329, 389, 168, 583].includes(u)){
+					improvements += icon;
+				}
+				// tactics
+				if([590, 222, 483, 559, 298, 178, 399, 513, 383, 345].includes(u)){
+					tactics += icon;
+				}
+			});
+
+			content += '<br/>' + improvements + '<br/>' + tactics;
+		}
+
+		return content;
 	}
 
 }

@@ -41,7 +41,9 @@
 		"GW2W_SECTOR_NAMES": "readonly",
 		"GW2W_POI_NAMES": "readonly",
 		"GW2W_HEROPOINT_NAMES": "readonly",
-		"GW2_WVW_OBJECTIVES": "readonly"
+		"GW2_WVW_OBJECTIVES": "readonly",
+		"GW2_WVW_WORLDS": "readonly",
+		"GW2_GUILD_UPGRADES": "readonly"
 	},
 	"env": {
 		"browser": true,

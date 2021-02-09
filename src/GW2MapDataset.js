@@ -86,7 +86,7 @@ export default class GW2MapDataset{
 	 * @private
 	 */
 	_parse_bool(data){
-		return Utils.in_array(data.toLowerCase(), ['1', 'true', 't', 'yes', 'y']);
+		return ['1', 'true', 't', 'yes', 'y'].includes(data.toLowerCase());
 	}
 
 	/**

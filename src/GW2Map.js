@@ -278,7 +278,7 @@ export default class GW2Map{
 			}
 
 			// i hate this.
-			if(Utils.in_array(layer, ['map_label', 'sector_label'])){
+			if(['map_label', 'sector_label'].includes(layer)){
 				Object.keys(el.children).forEach(c => {
 					let origin = window.getComputedStyle(el.children[c]).perspectiveOrigin.split(' ');
 
@@ -332,7 +332,7 @@ export default class GW2Map{
 		}
 
 		// optionally show that layer on the map
-		if(Utils.in_array(pane, initLayers)){
+		if(initLayers.includes(pane)){
 			this.layers[pane].addTo(this.map);
 		}
 	}

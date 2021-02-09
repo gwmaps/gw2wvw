@@ -1,0 +1,15 @@
+/* leaflet worldselect plugin */
+
+.leaflet-control-worldselect{
+	margin: 0;
+	padding: 0;
+}
+.leaflet-control-worldselect > select > .green{
+	color: #41C86A;
+}
+.leaflet-control-worldselect > select > .blue{
+	color: #3EA2F7;
+}
+.leaflet-control-worldselect > select > .red{
+	color: #DE4545;
+}

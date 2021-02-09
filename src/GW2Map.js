@@ -668,9 +668,10 @@ export default class GW2Map{
 				let objectiveElement = this.objectiveElements[objective.id];
 
 				objectiveElement.setIcon(new DivIcon({
-					iconSize : null,
-					className: ('gw2map-icon gw2map-' + objective.type.toLowerCase() + '-icon ' + owner),
-					html     : objective.tier > 0
+					iconSize   : null,
+					popupAnchor: 'auto',
+					className  : ('gw2map-icon gw2map-' + objective.type.toLowerCase() + '-icon ' + owner),
+					html       : objective.tier > 0
 						? '<div class="gw2map-icon gw2map-objective-tier t' + objective.tier + '"></div>'
 						: false,
 				}));

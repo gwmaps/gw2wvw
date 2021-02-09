@@ -34,7 +34,6 @@ export default class GW2Map{
 		maxZoom           : 6,
 		mapAttribution    : true,
 		fullscreenControl : true,
-		coordView         : true,
 		apiBase           : 'https://api.guildwars2.com',
 		tileBase          : 'https://tiles.guildwars2.com',
 		tileExt           : 'jpg',
@@ -165,8 +164,8 @@ export default class GW2Map{
 			coordView         : this.options.coordView,
 		});
 
-		// the tile layer(s) @todo: map levels?
-		this.tileLayers /* ['floor 1'] */ = new TileLayer('{tilebase}/2/3/{z}/{x}/{y}.{tileExt}', {
+		// the tile layer
+		this.tileLayers = new TileLayer('{tilebase}/2/3/{z}/{x}/{y}.{tileExt}', {
 			minZoom     : this.options.minZoom,
 			maxZoom     : this.options.maxZoom,
 			errorTileUrl: this.options.errorTile,
@@ -181,7 +180,7 @@ export default class GW2Map{
 
 		// add the layer controls
 		if(this.dataset.mapControls){
-			this.layerControls = new Control.Layers(/* this.tileLayers */).addTo(this.map);
+			this.layerControls = new Control.Layers().addTo(this.map);
 		}
 
 		// set map center
@@ -317,7 +316,6 @@ export default class GW2Map{
 
 		// add icon
 		if(p.layertype === 'icon'){
-			// @todo: remove gw2map-layer-control class
 			content += p.icon
 				? '<img class="gw2map-popup-icon gw2map-layer-control" src="' + p.icon + '" alt="' + p.name + '"/>'
 				: '<span class="gw2map-layer-control ' + pane + '" ></span>';
@@ -444,7 +442,6 @@ export default class GW2Map{
 		}
 		// else create a div icon with a classname depending on the type
 		else{
-//			console.log(p);
 
 			if(p.type === 'heropoint'){
 				iconParams.className += p.id.split('-')[0] === '0' ? ' core' : ' expac';

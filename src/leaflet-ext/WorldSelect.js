@@ -35,6 +35,7 @@ export default class WorldSelect extends Control{
 		// add one empty option element to the world selector
 		let firstOption = DomUtil.create('option', '', select);
 		firstOption.innerText = '[select world]'; // @todo: translate
+		firstOption.value     = 'none'
 
 		Object.keys(this._matchWorlds).forEach(worldID => {
 			let world = this._matchWorlds[worldID];

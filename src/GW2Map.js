@@ -595,7 +595,7 @@ export default class GW2Map{
 	 */
 	_startMatchUpdater(matchup){
 
-		if(!matchup || matchup === this.currentMatch){
+		if(!matchup || matchup === 'none' || matchup === this.currentMatch){
 			return;
 		}
 

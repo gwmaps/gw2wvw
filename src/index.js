@@ -272,9 +272,7 @@ import {
 		let maps = [];
 
 		Object.keys($containers).forEach(id => {
-			let gw2map = new GW2Map($containers[id], id, $options);
-
-			maps[id] = gw2map.init();
+			maps[id] = new GW2Map($containers[id], id, $options).init();
 		});
 
 //		console.log(maps);

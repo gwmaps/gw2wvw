@@ -46,7 +46,8 @@
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.gw2map-layer-control {
+// @todo: separate!?
+.gw2map-layer-control, .gw2map-popup-icon {
 	display: inline-block;
 	vertical-align: middle;
 	width: 16px;

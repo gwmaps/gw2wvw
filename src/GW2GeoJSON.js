@@ -302,10 +302,9 @@ export default class GW2GeoJSON{
 			this._addFeature('objective_icon', objective.id, mapID, objective.name, {
 				type     : objective.type,
 				sector   : objective.sector_id,
-				chat_link: objective.chat_link || false,
+				chat_link: objective.chat_link,
 			}, objective.coord);
 		});
-
 
 		return this;
 	}

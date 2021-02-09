@@ -12,12 +12,13 @@ export default class GW2MapDataset{
 
 	//noinspection RegExpRedundantEscape
 	metadata = {
-		language    : {type: 'int',   default: 'en'},
-		zoom        : {type: 'int',   default: -1},
-		mapControls : {type: 'bool',  default: true},
-		initLayers  : {type: 'array', default: null, regex: /^([a-z_,\s]+)$/i},
-		extraLayers : {type: 'array', default: null, regex: /^([a-z_,\s]+)$/i},
-		centerCoords: {type: 'array', default: null, regex: /^([\[\]\s\d\.,]+)$/},
+		language    : {type: 'int',    default: 'en'},
+		zoom        : {type: 'int',    default: -1},
+		mapControls : {type: 'bool',   default: true},
+		initLayers  : {type: 'array',  default: null, regex: /^([a-z_,\s]+)$/i},
+		extraLayers : {type: 'array',  default: null, regex: /^([a-z_,\s]+)$/i},
+		centerCoords: {type: 'array',  default: null, regex: /^([\[\]\s\d\.,]+)$/},
+		matchup     : {type: 'string', default: null, regex: /^(\d\-\d)$/},
 	};
 
 	dataset = {};
@@ -175,6 +176,16 @@ export default class GW2MapDataset{
 	 */
 	_parse_initLayers(data, meta){
 		return this._parse_extraLayers(data, meta);
+	}
+
+	/**
+	 * @param {Object} data
+	 * @param {Object} meta
+	 * @returns {string}
+	 * @private
+	 */
+	_parse_matchup(data, meta){
+		return data[0];
 	}
 
 }

@@ -43,11 +43,13 @@ export default class GW2Map{
 			+'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
 			+'GAEPAAEccgnDAAAAAElFTkSuQmCC',
 		colors            : {
-			map_poly   : 'rgba(255, 255, 255, 0.5)',
-			region_poly: 'rgba(255, 155, 255, 0.5)',
-			sector_poly: 'rgba(40, 140, 25, 0.5)',
-			task_poly  : 'rgba(250, 250, 30, 0.5)',
-			event_poly : 'rgba(210, 125, 40, 0.5)',
+			sector_poly : 'rgba(255, 255, 255, 0.5)',
+			sector_team: {
+				green  : 'rgba(69, 200, 106, 0.5)',
+				blue   : 'rgba(69, 162, 247, 0.5)',
+				red    : 'rgba(222, 69, 69, 0.5)',
+				neutral: 'rgba(222, 222, 222, 0.5)',
+			},
 		},
 		initLayers: [
 			'map_label',
@@ -473,12 +475,27 @@ export default class GW2Map{
 	_layerStyle(feature, pane){
 		let p = feature.properties;
 
-		if(Utils.in_array(pane, ['region_poly', 'map_poly', 'sector_poly'])){
+		if(['region_poly', 'map_poly', 'sector_poly'].includes(pane)){
+			let color = this.options.colors[pane] || 'rgb(255, 255, 255)';
+
+			// fixed sector colors
+			if(pane === 'sector_poly'){
+				if([850, 993, 974, 1350].includes(feature.id)){
+					color = this.options.colors.sector_team.green;
+				}
+				else if([836, 980, 1000, 1311].includes(feature.id)){
+					color = this.options.colors.sector_team.blue;
+				}
+				else if([845, 977, 997, 1343].includes(feature.id)){
+					color = this.options.colors.sector_team.red;
+				}
+			}
+
 			return {
 				pane: pane,
 				stroke: true,
 				opacity: 0.6,
-				color: this.options.colors[pane] || 'rgb(255, 255, 255)',
+				color: color,
 				weight: 2,
 				interactive: false,
 			}

@@ -2,1412 +2,1412 @@
 	"objectives": {
 		"38": [
 			{
+				"chat_link": "[&DAsAAAAmAAAA]",
+				"coord": [9414, 14793],
 				"id": "38-11",
 				"name": {
-					"en": "Aldon's Ledge",
 					"de": "Aldons Vorsprung",
+					"en": "Aldon's Ledge",
 					"es": "Cornisa de Aldon",
 					"fr": "Corniche d'Aldon",
 					"zh": "阿尔丹暗礁"
 				},
 				"sector_id": 882,
-				"type": "tower",
-				"coord": [9414, 14793],
-				"chat_link": "[&DAsAAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DHsAAAAmAAAA]",
+				"coord": [9975, 14201],
 				"id": "38-123",
 				"name": {
-					"en": "Molevekian Delve",
 					"de": "Maulevek-Senke",
+					"en": "Molevekian Delve",
 					"es": "Hondonada Topovekiana",
 					"fr": "Antre de Molevekian",
 					"zh": "鼹鼠地洞"
 				},
 				"sector_id": 847,
-				"type": "mercenary",
-				"chat_link": "[&DHsAAAAmAAAA]",
-				"coord": [9975, 14201]
+				"type": "mercenary"
 			},
 			{
+				"chat_link": "[&DAEAAAAmAAAA]",
+				"coord": [10764, 13656],
 				"id": "38-1",
 				"name": {
-					"en": "Overlook",
 					"de": "Aussichtspunkt von",
+					"en": "Overlook",
 					"es": "Mirador",
 					"fr": "- Belvédère",
 					"zh": "眺望台"
 				},
 				"sector_id": 843,
-				"type": "keep",
-				"coord": [10764, 13656],
-				"chat_link": "[&DAEAAAAmAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DA8AAAAmAAAA]",
+				"coord": [11453, 15491],
 				"id": "38-15",
 				"name": {
-					"en": "Langor Gulch",
 					"de": "Langor-Schlucht",
+					"en": "Langor Gulch",
 					"es": "Barranco Langor",
 					"fr": "Ravin de Langor",
 					"zh": "朗格尔峡谷"
 				},
 				"sector_id": 887,
-				"type": "tower",
-				"coord": [11453, 15491],
-				"chat_link": "[&DA8AAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DAMAAAAmAAAA]",
+				"coord": [9604, 15130],
 				"id": "38-3",
 				"name": {
-					"en": "Lowlands",
 					"de": "Tiefland von",
+					"en": "Lowlands",
 					"es": "Tierras bajas",
 					"fr": "- Basses terres",
 					"zh": "低地"
 				},
 				"sector_id": 848,
-				"type": "keep",
-				"coord": [9604, 15130],
-				"chat_link": "[&DAMAAAAmAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DBEAAAAmAAAA]",
+				"coord": [10257, 13514],
 				"id": "38-17",
 				"name": {
-					"en": "Mendon's Gap",
 					"de": "Mendons Spalt",
+					"en": "Mendon's Gap",
 					"es": "Zanja de Mendon",
 					"fr": "Faille de Mendon",
 					"zh": "曼敦峡谷"
 				},
 				"sector_id": 890,
-				"type": "tower",
-				"coord": [10257, 13514],
-				"chat_link": "[&DBEAAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DAcAAAAmAAAA]",
+				"coord": [11038, 15556],
 				"id": "38-7",
 				"name": {
-					"en": "Danelon Passage",
 					"de": "Danelon-Passage",
+					"en": "Danelon Passage",
 					"es": "Pasaje Danelon",
 					"fr": "Passage Danelon",
 					"zh": "丹隆之廊"
 				},
 				"sector_id": 837,
-				"type": "camp",
-				"coord": [11038, 15556],
-				"chat_link": "[&DAcAAAAmAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DH0AAAAmAAAA]",
+				"coord": [11274, 14097],
 				"id": "38-125",
 				"name": {
-					"en": "Orgath Uplands",
 					"de": "Orgath-Hochland",
+					"en": "Orgath Uplands",
 					"es": "Altiplano Orgath",
 					"fr": "Hauteurs d'Orgath",
 					"zh": "欧格斯高地"
 				},
 				"sector_id": 841,
-				"type": "mercenary",
-				"chat_link": "[&DH0AAAAmAAAA]",
-				"coord": [11274, 14097]
+				"type": "mercenary"
 			},
 			{
+				"chat_link": "[&DH4AAAAmAAAA]",
+				"coord": [10685, 15300],
 				"id": "38-126",
 				"name": {
-					"en": "Darkrait Inlet",
 					"de": "Darkrait-Zufluss",
+					"en": "Darkrait Inlet",
 					"es": "Ensenada Kraitoscuro",
 					"fr": "Crique Sombrait",
 					"zh": "黑蛇入口"
 				},
 				"sector_id": 842,
-				"type": "mercenary",
-				"chat_link": "[&DH4AAAAmAAAA]",
-				"coord": [10685, 15300]
+				"type": "mercenary"
 			},
 			{
+				"chat_link": "[&DAkAAAAmAAAA]",
+				"coord": [10606, 14576],
 				"id": "38-9",
 				"name": {
-					"en": "Stonemist Castle",
 					"de": "Schloss Steinnebel",
+					"en": "Stonemist Castle",
 					"es": "Castillo Piedraniebla",
 					"fr": "Château Brumepierre",
 					"zh": "石云堡"
 				},
 				"sector_id": 833,
-				"type": "castle",
-				"coord": [10606, 14576],
-				"chat_link": "[&DAkAAAAmAAAA]"
+				"type": "castle"
 			},
 			{
+				"chat_link": "[&DAUAAAAmAAAA]",
+				"coord": [11280, 13737],
 				"id": "38-5",
 				"name": {
-					"en": "Pangloss Rise",
 					"de": "Pangloss-Anhöhe",
+					"en": "Pangloss Rise",
 					"es": "Colina Pangloss",
 					"fr": "Montée de Pangloss",
 					"zh": "潘乐高地"
 				},
 				"sector_id": 846,
-				"type": "camp",
-				"coord": [11280, 13737],
-				"chat_link": "[&DAUAAAAmAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DBUAAAAmAAAA]",
+				"coord": [11156, 14528],
 				"id": "38-21",
 				"name": {
-					"en": "Durios Gulch",
 					"de": "Durios-Schlucht",
+					"en": "Durios Gulch",
 					"es": "Barranco Durios",
 					"fr": "Ravin de Durios",
 					"zh": "德里尤斯峡谷"
 				},
 				"sector_id": 888,
-				"type": "tower",
-				"coord": [11156, 14528],
-				"chat_link": "[&DBUAAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DBQAAAAmAAAA]",
+				"coord": [11090, 13488],
 				"id": "38-20",
 				"name": {
-					"en": "Veloka Slope",
 					"de": "Veloka-Hang",
+					"en": "Veloka Slope",
 					"es": "Pendiente Veloka",
 					"fr": "Flanc de Veloka",
 					"zh": "维罗卡斜坡"
 				},
 				"sector_id": 891,
-				"type": "tower",
-				"coord": [11090, 13488],
-				"chat_link": "[&DBQAAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DA4AAAAmAAAA]",
+				"coord": [10172, 15082],
 				"id": "38-14",
 				"name": {
-					"en": "Klovan Gully",
 					"de": "Klovan-Senke",
+					"en": "Klovan Gully",
 					"es": "Barranco Klovan",
 					"fr": "Petit ravin de Klovan",
 					"zh": "科洛文水渠"
 				},
 				"sector_id": 884,
-				"type": "tower",
-				"coord": [10172, 15082],
-				"chat_link": "[&DA4AAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DA0AAAAmAAAA]",
+				"coord": [9806, 15406],
 				"id": "38-13",
 				"name": {
-					"en": "Jerrifer's Slough",
 					"de": "Jerrifers Sumpfloch",
+					"en": "Jerrifer's Slough",
 					"es": "Cenagal de Jerrifer",
 					"fr": "Bourbier de Jerrifer",
 					"zh": "杰里弗泥潭"
 				},
 				"sector_id": 883,
-				"type": "tower",
-				"coord": [9806, 15406],
-				"chat_link": "[&DA0AAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DAYAAAAmAAAA]",
+				"coord": [9841, 13546],
 				"id": "38-6",
 				"name": {
-					"en": "Speldan Clearcut",
 					"de": "Speldan-Kahlschlag",
+					"en": "Speldan Clearcut",
 					"es": "Claro Espeldia",
 					"fr": "Forêt rasée de Speldan",
 					"zh": "斯佩尔丹营地"
 				},
 				"sector_id": 844,
-				"type": "camp",
-				"coord": [9841, 13546],
-				"chat_link": "[&DAYAAAAmAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DAIAAAAmAAAA]",
+				"coord": [11490, 15122],
 				"id": "38-2",
 				"name": {
-					"en": "Valley",
 					"de": "Tal von",
+					"en": "Valley",
 					"es": "Valle",
 					"fr": "- Vallée",
 					"zh": "溪谷"
 				},
 				"sector_id": 834,
-				"type": "keep",
-				"coord": [11490, 15122],
-				"chat_link": "[&DAIAAAAmAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DAwAAAAmAAAA]",
+				"coord": [9906, 14625],
 				"id": "38-12",
 				"name": {
-					"en": "Wildcreek Run",
 					"de": "Wildbach-Strecke",
+					"en": "Wildcreek Run",
 					"es": "Pista Arroyosalvaje",
 					"fr": "Piste du ruisseau sauvage",
 					"zh": "野溪急道"
 				},
 				"sector_id": 885,
-				"type": "tower",
-				"coord": [9906, 14625],
-				"chat_link": "[&DAwAAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DBAAAAAmAAAA]",
+				"coord": [10850, 15224],
 				"id": "38-16",
 				"name": {
-					"en": "Quentin Lake",
 					"de": "Quentin-See",
+					"en": "Quentin Lake",
 					"es": "Lago Quentin",
 					"fr": "Lac Quentin",
 					"zh": "昆汀湖"
 				},
 				"sector_id": 889,
-				"type": "tower",
-				"coord": [10850, 15224],
-				"chat_link": "[&DBAAAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DBYAAAAmAAAA]",
+				"coord": [11766, 14794],
 				"id": "38-22",
 				"name": {
-					"en": "Bravost Escarpment",
 					"de": "Bravost-Abhang",
+					"en": "Bravost Escarpment",
 					"es": "Escarpadura Bravost",
 					"fr": "Falaise de Bravost",
 					"zh": "斗胆悬崖"
 				},
 				"sector_id": 886,
-				"type": "tower",
-				"coord": [11766, 14794],
-				"chat_link": "[&DBYAAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DBMAAAAmAAAA]",
+				"coord": [10965, 14055],
 				"id": "38-19",
 				"name": {
-					"en": "Ogrewatch Cut",
 					"de": "Ogerwacht-Kanal",
+					"en": "Ogrewatch Cut",
 					"es": "Tajo de la Guardia del Ogro",
 					"fr": "Percée de Gardogre",
 					"zh": "食人魔山路"
 				},
 				"sector_id": 892,
-				"type": "tower",
-				"coord": [10965, 14055],
-				"chat_link": "[&DBMAAAAmAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DAQAAAAmAAAA]",
+				"coord": [10203, 15437],
 				"id": "38-4",
 				"name": {
-					"en": "Golanta Clearing",
 					"de": "Golanta-Lichtung",
+					"en": "Golanta Clearing",
 					"es": "Claro Golanta",
 					"fr": "Clairière de Golanta",
 					"zh": "格兰塔空地"
 				},
 				"sector_id": 849,
-				"type": "camp",
-				"coord": [10203, 15437],
-				"chat_link": "[&DAQAAAAmAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DAgAAAAmAAAA]",
+				"coord": [11562, 14470],
 				"id": "38-8",
 				"name": {
-					"en": "Umberglade Woods",
 					"de": "Umberlichtung-Forst",
+					"en": "Umberglade Woods",
 					"es": "Bosques Clarosombra",
 					"fr": "Bois d'Ombreclair",
 					"zh": "褐沼树林"
 				},
 				"sector_id": 835,
-				"type": "camp",
-				"coord": [11562, 14470],
-				"chat_link": "[&DAgAAAAmAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DAoAAAAmAAAA]",
+				"coord": [9571, 14423],
 				"id": "38-10",
 				"name": {
-					"en": "Rogue's Quarry",
 					"de": "Schurkenbruch",
+					"en": "Rogue's Quarry",
 					"es": "Cantera del Pícaro",
 					"fr": "Carrière du voleur",
 					"zh": "盗贼采石场"
 				},
 				"sector_id": 851,
-				"type": "camp",
-				"coord": [9571, 14423],
-				"chat_link": "[&DAoAAAAmAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DBIAAAAmAAAA]",
+				"coord": [10189, 14082],
 				"id": "38-18",
 				"name": {
-					"en": "Anzalias Pass",
 					"de": "Anzalias-Pass",
+					"en": "Anzalias Pass",
 					"es": "Paso Anzalias",
 					"fr": "Col d'Anzalias",
 					"zh": "真语小径"
 				},
 				"sector_id": 893,
-				"type": "tower",
-				"coord": [10189, 14082],
-				"chat_link": "[&DBIAAAAmAAAA]"
+				"type": "tower"
 			}
 		],
 		"968": [
 			{
+				"chat_link": "[&DGIAAADIAwAA]",
+				"coord": [6728, 10185],
 				"id": "968-98",
 				"name": {
-					"en": "Wurm Tunnel",
 					"de": "Wurmtunnel",
+					"en": "Wurm Tunnel",
 					"es": "Túnel de la Sierpe",
 					"fr": "Tunnel de guivre",
 					"zh": "地虫隧道"
 				},
 				"sector_id": 1156,
-				"type": "generic",
-				"coord": [6728, 10185],
-				"chat_link": "[&DGIAAADIAwAA]"
+				"type": "generic"
 			},
 			{
+				"chat_link": "[&DGAAAADIAwAA]",
+				"coord": [7114, 10382],
 				"id": "968-96",
 				"name": {
-					"en": "Airport",
 					"de": "Flughafen",
+					"en": "Airport",
 					"es": "Aeropuerto",
 					"fr": "Aéroport",
 					"zh": "空港"
 				},
 				"sector_id": 1153,
-				"type": "generic",
-				"coord": [7114, 10382],
-				"chat_link": "[&DGAAAADIAwAA]"
+				"type": "generic"
 			},
 			{
+				"chat_link": "[&DFIAAADIAwAA]",
+				"coord": [8273, 10416],
 				"id": "968-82",
 				"name": {
-					"en": "Thunder Hollow Reactor",
 					"de": "Donnersenkenreaktor",
+					"en": "Thunder Hollow Reactor",
 					"es": "Reactor de Hondonada del Trueno",
 					"fr": "Réacteur de Tonnecrevasse",
 					"zh": "雷霆山谷反应堆"
 				},
 				"sector_id": 1168,
-				"type": "resource",
-				"coord": [8273, 10416],
-				"chat_link": "[&DFIAAADIAwAA]"
+				"type": "resource"
 			},
 			{
+				"chat_link": "[&DF0AAADIAwAA]",
+				"coord": [8155, 10774],
 				"id": "968-93",
 				"name": {
-					"en": "Forge",
 					"de": "Schmiede",
+					"en": "Forge",
 					"es": "Forja",
 					"fr": "Forge",
 					"zh": "熔炉"
 				},
 				"sector_id": 1154,
-				"type": "generic",
-				"coord": [8155, 10774],
-				"chat_link": "[&DF0AAADIAwAA]"
+				"type": "generic"
 			},
 			{
+				"chat_link": "[&DFAAAADIAwAA]",
+				"coord": [7519, 9108],
 				"id": "968-80",
 				"name": {
-					"en": "Overgrown Fane Reactor",
 					"de": "Überwucherter Gotteshaus-Reaktor",
+					"en": "Overgrown Fane Reactor",
 					"es": "Reactor de Fano Gigante",
 					"fr": "Réacteur du Temple surdimensionné",
 					"zh": "野性神庙反应堆"
 				},
 				"sector_id": 1162,
-				"type": "resource",
-				"coord": [7519, 9108],
-				"chat_link": "[&DFAAAADIAwAA]"
+				"type": "resource"
 			},
 			{
+				"chat_link": "[&DF4AAADIAwAA]",
+				"coord": [8802, 10154],
 				"id": "968-94",
 				"name": {
-					"en": "Shrine",
 					"de": "Schrein",
+					"en": "Shrine",
 					"es": "Santuario",
 					"fr": "Sanctuaire",
 					"zh": "圣坛"
 				},
 				"sector_id": 1164,
-				"type": "generic",
-				"coord": [8802, 10154],
-				"chat_link": "[&DF4AAADIAwAA]"
+				"type": "generic"
 			},
 			{
+				"chat_link": "[&DFoAAADIAwAA]",
+				"coord": [7125, 9225],
 				"id": "968-90",
 				"name": {
-					"en": "Altar",
 					"de": "Altar",
+					"en": "Altar",
 					"es": "Altar",
 					"fr": "Autel",
 					"zh": "祭坛"
 				},
 				"sector_id": 1160,
-				"type": "generic",
-				"coord": [7125, 9225],
-				"chat_link": "[&DFoAAADIAwAA]"
+				"type": "generic"
 			},
 			{
+				"chat_link": "[&DGEAAADIAwAA]",
+				"coord": [6850, 10730],
 				"id": "968-97",
 				"name": {
-					"en": "Workshop",
 					"de": "Werkstatt",
+					"en": "Workshop",
 					"es": "Taller",
 					"fr": "Atelier",
 					"zh": "工场"
 				},
 				"sector_id": 1152,
-				"type": "generic",
-				"coord": [6850, 10730],
-				"chat_link": "[&DGEAAADIAwAA]"
+				"type": "generic"
 			},
 			{
+				"chat_link": "[&DFEAAADIAwAA]",
+				"coord": [6789, 10415],
 				"id": "968-81",
 				"name": {
-					"en": "Arid Fortress Reactor",
 					"de": "Dürrefestungreaktor",
+					"en": "Arid Fortress Reactor",
 					"es": "Reactor de Fortaleza Árida",
 					"fr": "Réacteur de la Forteresse aride",
 					"zh": "蛮荒堡垒反应堆"
 				},
 				"sector_id": 1163,
-				"type": "resource",
-				"coord": [6789, 10415],
-				"chat_link": "[&DFEAAADIAwAA]"
+				"type": "resource"
 			},
 			{
+				"chat_link": "[&DFMAAADIAwAA]",
+				"coord": [7270, 9839],
 				"id": "968-83",
 				"name": {
-					"en": "Stonegaze Spire Reactor",
 					"de": "Steinblick-Zackenstabreaktor",
+					"en": "Stonegaze Spire Reactor",
 					"es": "Reactor de Aguja de Mirapiedras",
 					"fr": "Réacteur du Pic de Pierregard",
 					"zh": "石望尖塔反应堆"
 				},
 				"sector_id": 1167,
-				"type": "resource",
-				"coord": [7270, 9839],
-				"chat_link": "[&DFMAAADIAwAA]"
+				"type": "resource"
 			},
 			{
+				"chat_link": "[&DF8AAADIAwAA]",
+				"coord": [8097, 10297],
 				"id": "968-95",
 				"name": {
-					"en": "Bell Tower",
 					"de": "Glockenturm",
+					"en": "Bell Tower",
 					"es": "Campanario",
 					"fr": "Clocher",
 					"zh": "钟楼"
 				},
 				"sector_id": 1173,
-				"type": "generic",
-				"coord": [8097, 10297],
-				"chat_link": "[&DF8AAADIAwAA]"
+				"type": "generic"
 			},
 			{
+				"chat_link": "[&DFsAAADIAwAA]",
+				"coord": [8128, 9030],
 				"id": "968-91",
 				"name": {
-					"en": "Observatory",
 					"de": "Observatorium",
+					"en": "Observatory",
 					"es": "Observatorio",
 					"fr": "Observatoire",
 					"zh": "观测台"
 				},
 				"sector_id": 1158,
-				"type": "generic",
-				"coord": [8128, 9030],
-				"chat_link": "[&DFsAAADIAwAA]"
+				"type": "generic"
 			},
 			{
+				"chat_link": "[&DE4AAADIAwAA]",
+				"coord": [7512, 8690],
 				"id": "968-78",
 				"name": {
-					"en": "Overgrown Fane",
 					"de": "Überwuchertes Gotteshaus",
+					"en": "Overgrown Fane",
 					"es": "Fano Gigante",
 					"fr": "Temple surdimensionné",
 					"zh": "野性神庙"
 				},
 				"sector_id": 1161,
-				"type": "keep",
-				"coord": [7512, 8690],
-				"chat_link": "[&DE4AAADIAwAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DFgAAADIAwAA]",
+				"coord": [6789, 10415],
 				"id": "968-88",
 				"name": {
-					"en": "Arid Fortress",
 					"de": "Dürrefestung",
+					"en": "Arid Fortress",
 					"es": "Fortaleza Árida",
 					"fr": "Forteresse aride",
 					"zh": "蛮荒堡垒"
 				},
 				"sector_id": 1157,
-				"type": "keep",
-				"coord": [6789, 10415],
-				"chat_link": "[&DFgAAADIAwAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DFkAAADIAwAA]",
+				"coord": [8111, 9659],
 				"id": "968-89",
 				"name": {
-					"en": "Tytone Perch",
 					"de": "Tytonenwarte",
+					"en": "Tytone Perch",
 					"es": "Percha de Tytone",
 					"fr": "Perchoir de Tytone",
 					"zh": "钛金高台"
 				},
 				"sector_id": 1172,
-				"type": "tower",
-				"coord": [8111, 9659],
-				"chat_link": "[&DFkAAADIAwAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DE8AAADIAwAA]",
+				"coord": [8610, 10626],
 				"id": "968-79",
 				"name": {
-					"en": "Thunder Hollow",
 					"de": "Donnersenke",
+					"en": "Thunder Hollow",
 					"es": "Hondonada del Trueno",
 					"fr": "Tonnecrevasse",
 					"zh": "雷霆山谷"
 				},
 				"sector_id": 1169,
-				"type": "keep",
-				"coord": [8610, 10626],
-				"chat_link": "[&DE8AAADIAwAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DFUAAADIAwAA]",
+				"coord": [7783, 9851],
 				"id": "968-85",
 				"name": {
-					"en": "Tytone Perch Reactor",
 					"de": "Tytonenwarte-Reaktor",
+					"en": "Tytone Perch Reactor",
 					"es": "Reactor de Percha de Tytone",
 					"fr": "Réacteur du Perchoir de Tytone",
 					"zh": "钛金高台反应堆"
 				},
 				"sector_id": 1165,
-				"type": "resource",
-				"coord": [7783, 9851],
-				"chat_link": "[&DFUAAADIAwAA]"
+				"type": "resource"
 			},
 			{
+				"chat_link": "[&DE0AAADIAwAA]",
+				"coord": [7528, 10619],
 				"id": "968-77",
 				"name": {
-					"en": "Inferno's Needle",
 					"de": "Infernonadel",
+					"en": "Inferno's Needle",
 					"es": "Aguja del Infierno",
 					"fr": "Aiguille infernale",
 					"zh": "狱火极峰"
 				},
 				"sector_id": 1171,
-				"type": "tower",
-				"coord": [7528, 10619],
-				"chat_link": "[&DE0AAADIAwAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DFcAAADIAwAA]",
+				"coord": [6960, 9665],
 				"id": "968-87",
 				"name": {
-					"en": "Stonegaze Spire",
 					"de": "Steinblick-Zackenstab",
+					"en": "Stonegaze Spire",
 					"es": "Aguja de Mirapiedras",
 					"fr": "Pic de Pierregard",
 					"zh": "石望尖塔"
 				},
 				"sector_id": 1170,
-				"type": "tower",
-				"coord": [6960, 9665],
-				"chat_link": "[&DFcAAADIAwAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DFQAAADIAwAA]",
+				"coord": [7527, 10267],
 				"id": "968-84",
 				"name": {
-					"en": "Inferno's Needle Reactor",
 					"de": "Infernonadel-Reaktor",
+					"en": "Inferno's Needle Reactor",
 					"es": "Reactor de Aguja del Infierno",
 					"fr": "Réacteur de l'Aiguille infernale",
 					"zh": "狱火极峰反应堆"
 				},
 				"sector_id": 1166,
-				"type": "resource",
-				"coord": [7527, 10267],
-				"chat_link": "[&DFQAAADIAwAA]"
+				"type": "resource"
 			},
 			{
+				"chat_link": "[&DFwAAADIAwAA]",
+				"coord": [7557, 9392],
 				"id": "968-92",
 				"name": {
-					"en": "Statuary",
 					"de": "Statue",
+					"en": "Statuary",
 					"es": "Estatuario",
 					"fr": "Statue",
 					"zh": "雕像"
 				},
 				"sector_id": 1159,
-				"type": "generic",
-				"coord": [7557, 9392],
-				"chat_link": "[&DFwAAADIAwAA]"
+				"type": "generic"
 			}
 		],
 		"1099": [
 			{
+				"chat_link": "[&DGMAAABLBAAA]",
+				"coord": [10744, 9493],
 				"id": "1099-99",
 				"name": {
-					"en": "Hamm's Lab",
 					"de": "Hamms Labor",
+					"en": "Hamm's Lab",
 					"es": "Laboratorio de Hamm",
 					"fr": "Laboratoire de Hamm",
 					"zh": "汉姆的实验室"
 				},
 				"sector_id": 1314,
-				"type": "camp",
-				"coord": [10744, 9493],
-				"chat_link": "[&DGMAAABLBAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DGQAAABLBAAA]",
+				"coord": [11889, 11291],
 				"id": "1099-100",
 				"name": {
-					"en": "Bauer Farmstead",
 					"de": "Bauer-Gehöft",
+					"en": "Bauer Farmstead",
 					"es": "Hacienda de Bauer",
 					"fr": "Ferme Bauer",
 					"zh": "鲍尔的农场"
 				},
 				"sector_id": 1280,
-				"type": "camp",
-				"coord": [11889, 11291],
-				"chat_link": "[&DGQAAABLBAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DGUAAABLBAAA]",
+				"coord": [9584, 11295],
 				"id": "1099-101",
 				"name": {
-					"en": "McLain's Encampment",
 					"de": "McLains Lager",
+					"en": "McLain's Encampment",
 					"es": "Campamento de McLain",
 					"fr": "Campement de McLain",
 					"zh": "麦克莱恩的营地"
 				},
 				"sector_id": 1286,
-				"type": "camp",
-				"coord": [9584, 11295],
-				"chat_link": "[&DGUAAABLBAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DGYAAABLBAAA]",
+				"coord": [9832, 9508],
 				"id": "1099-102",
 				"name": {
-					"en": "O'del Academy",
 					"de": "O'del-Akademie",
+					"en": "O'del Academy",
 					"es": "Academia O'del",
 					"fr": "Académie de O'del",
 					"zh": "欧黛学院"
 				},
 				"sector_id": 1352,
-				"type": "tower",
-				"coord": [9832, 9508],
-				"chat_link": "[&DGYAAABLBAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DGgAAABLBAAA]",
+				"coord": [11739, 9654],
 				"id": "1099-104",
 				"name": {
-					"en": "Eternal Necropolis",
 					"de": "Ewige Nekropole",
+					"en": "Eternal Necropolis",
 					"es": "Necrópolis Eterna",
 					"fr": "Nécropole éternelle",
 					"zh": "永恒魂都"
 				},
 				"sector_id": 1308,
-				"type": "tower",
-				"coord": [11739, 9654],
-				"chat_link": "[&DGgAAABLBAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DGkAAABLBAAA]",
+				"coord": [11257, 11551],
 				"id": "1099-105",
 				"name": {
-					"en": "Crankshaft Depot",
 					"de": "Kurbelwellen-Depot",
+					"en": "Crankshaft Depot",
 					"es": "Depósito de Palancamanijas",
 					"fr": "Dépôt Vilebrequin",
 					"zh": "机轴补给站"
 				},
 				"sector_id": 1354,
-				"type": "tower",
-				"coord": [11257, 11551],
-				"chat_link": "[&DGkAAABLBAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DGoAAABLBAAA]",
+				"coord": [9328, 10634],
 				"id": "1099-106",
 				"name": {
-					"en": "Blistering Undercroft",
 					"de": "Brennende Gruft",
+					"en": "Blistering Undercroft",
 					"es": "Sótano Achicharrante",
 					"fr": "Crypte embrasée",
 					"zh": "沸腾墓穴"
 				},
 				"sector_id": 1351,
-				"type": "keep",
-				"coord": [9328, 10634],
-				"chat_link": "[&DGoAAABLBAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DHYAAABLBAAA]",
+				"coord": [10913, 11198],
 				"id": "1099-118",
 				"name": {
-					"en": "Higgins's Ascent",
 					"de": "Higgins' Aufstieg",
+					"en": "Higgins's Ascent",
 					"es": "Ascenso de Higgins",
 					"fr": "Ascension d'Higgins",
 					"zh": "希金斯坡道"
 				},
 				"sector_id": 1420,
-				"type": "ruins",
-				"coord": [10913, 11198],
-				"chat_link": "[&DHYAAABLBAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DHcAAABLBAAA]",
+				"coord": [10447, 10762],
 				"id": "1099-119",
 				"name": {
-					"en": "Bearce's Dwelling",
 					"de": "Bearces Behausung",
+					"en": "Bearce's Dwelling",
 					"es": "Morada de Bearce",
 					"fr": "Habitation de Bearce",
 					"zh": "巴雷斯的住所"
 				},
 				"sector_id": 1421,
-				"type": "ruins",
-				"coord": [10447, 10762],
-				"chat_link": "[&DHcAAABLBAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DG0AAABLBAAA]",
+				"coord": [12100, 10019],
 				"id": "1099-109",
 				"name": {
-					"en": "Roy's Refuge",
 					"de": "Roys Zuflucht",
+					"en": "Roy's Refuge",
 					"es": "Refugio de Roy",
 					"fr": "Refuge de Roy",
 					"zh": "罗伊的避难所"
 				},
 				"sector_id": 1322,
-				"type": "camp",
-				"coord": [12100, 10019],
-				"chat_link": "[&DG0AAABLBAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DHgAAABLBAAA]",
+				"coord": [10990, 10778],
 				"id": "1099-120",
 				"name": {
-					"en": "Zak's Overlook",
 					"de": "Zaks Aussichtspunkt",
+					"en": "Zak's Overlook",
 					"es": "Mirador de Zak",
 					"fr": "Belvédère de Zak",
 					"zh": "扎科瞭望台"
 				},
 				"sector_id": 1441,
-				"type": "ruins",
-				"coord": [10990, 10778],
-				"chat_link": "[&DHgAAABLBAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DG4AAABLBAAA]",
+				"coord": [10244, 11331],
 				"id": "1099-110",
 				"name": {
-					"en": "Parched Outpost",
 					"de": "Verdörrter Außenposten",
+					"en": "Parched Outpost",
 					"es": "Puesto Avanzado Abrasado",
 					"fr": "Avant-poste dévasté",
 					"zh": "焦枯前哨"
 				},
 				"sector_id": 1277,
-				"type": "tower",
-				"coord": [10244, 11331],
-				"chat_link": "[&DG4AAABLBAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DHEAAABLBAAA]",
+				"coord": [10777, 10120],
 				"id": "1099-113",
 				"name": {
-					"en": "Stoic Rampart",
 					"de": "Stoischer Festungswall",
+					"en": "Stoic Rampart",
 					"es": "Muralla Estoica",
 					"fr": "Rempart stoïque",
 					"zh": "坚忍壁垒"
 				},
 				"sector_id": 1303,
-				"type": "keep",
-				"coord": [10777, 10120],
-				"chat_link": "[&DHEAAABLBAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DHIAAABLBAAA]",
+				"coord": [12203, 10706],
 				"id": "1099-114",
 				"name": {
-					"en": "Osprey's Palace",
 					"de": "Fischadler-Palast",
+					"en": "Osprey's Palace",
 					"es": "Palacio del Águila Pescadora",
 					"fr": "Palais du balbuzard",
 					"zh": "鱼鹰宫殿"
 				},
 				"sector_id": 1300,
-				"type": "keep",
-				"coord": [12203, 10706],
-				"chat_link": "[&DHIAAABLBAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DHkAAABLBAAA]",
+				"coord": [10399, 11060],
 				"id": "1099-121",
 				"name": {
-					"en": "Darra's Maze",
 					"de": "Darras Labyrinth",
+					"en": "Darra's Maze",
 					"es": "Laberinto de Darra",
 					"fr": "Labyrinthe de Darra",
 					"zh": "达拉的迷宫"
 				},
 				"sector_id": 1444,
-				"type": "ruins",
-				"coord": [10399, 11060],
-				"chat_link": "[&DHkAAABLBAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DHMAAABLBAAA]",
+				"coord": [9313, 9994],
 				"id": "1099-115",
 				"name": {
-					"en": "Boettiger's Hideaway",
 					"de": "Boettigers Versteck",
+					"en": "Boettiger's Hideaway",
 					"es": "Escondrijo de Boettiger",
 					"fr": "Antre de Boettiger",
 					"zh": "波提加的藏匿点"
 				},
 				"sector_id": 1316,
-				"type": "camp",
-				"coord": [9313, 9994],
-				"chat_link": "[&DHMAAABLBAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DHoAAABLBAAA]",
+				"coord": [10725, 10454],
 				"id": "1099-122",
 				"name": {
-					"en": "Tilly's Encampment",
 					"de": "Tillys Lager",
+					"en": "Tilly's Encampment",
 					"es": "Campamento de Tilly",
 					"fr": "Campement de Tilly",
 					"zh": "提利的营地"
 				},
 				"sector_id": 1436,
-				"type": "ruins",
-				"coord": [10725, 10454],
-				"chat_link": "[&DHoAAABLBAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DHQAAABLBAAA]",
+				"coord": [10747, 11854],
 				"id": "1099-116",
 				"name": {
-					"en": "Dustwhisper Well",
 					"de": "Brunnen des Staubflüsterns",
+					"en": "Dustwhisper Well",
 					"es": "Pozo del Murmullo de Polvo",
 					"fr": "Puits du Souffle-poussière",
 					"zh": "尘语之井"
 				},
 				"sector_id": 1296,
-				"type": "camp",
-				"coord": [10747, 11854],
-				"chat_link": "[&DHQAAABLBAAA]"
+				"type": "camp"
 			}
 		],
 		"96": [
 			{
+				"chat_link": "[&DD4AAABgAAAA]",
+				"coord": [14065, 13340],
 				"id": "96-62",
 				"name": {
-					"en": "Temple of Lost Prayers",
 					"de": "Tempel der Verlorenen Gebete",
+					"en": "Temple of Lost Prayers",
 					"es": "Templo de las Plegarias Perdidas",
 					"fr": "Temple des prières perdues",
 					"zh": "迷途祷告者神殿"
 				},
 				"sector_id": 1381,
-				"type": "ruins",
-				"coord": [14065, 13340],
-				"chat_link": "[&DD4AAABgAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCMAAABgAAAA]",
+				"coord": [13689, 13339],
 				"id": "96-35",
 				"name": {
-					"en": "Redbriar",
 					"de": "Rotstrauch",
+					"en": "Redbriar",
 					"es": "Zarzarroja",
 					"fr": "Bruyerouge",
 					"zh": "红荆地"
 				},
 				"sector_id": 990,
-				"type": "tower",
-				"coord": [13689, 13339],
-				"chat_link": "[&DCMAAABgAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DCAAAABgAAAA]",
+				"coord": [15255, 12881],
 				"id": "96-32",
 				"name": {
-					"en": "Askalion Hills",
 					"de": "Askalion-Hügel",
+					"en": "Askalion Hills",
 					"es": "Colinas Askalion",
 					"fr": "Collines d'Askalion",
 					"zh": "阿斯卡里昂丘陵"
 				},
 				"sector_id": 979,
-				"type": "keep",
-				"coord": [15255, 12881],
-				"chat_link": "[&DCAAAABgAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DCEAAABgAAAA]",
+				"coord": [13035, 12957],
 				"id": "96-33",
 				"name": {
-					"en": "Ascension Bay",
 					"de": "Aufstiegsbucht",
+					"en": "Ascension Bay",
 					"es": "Bahía de la Ascensión",
 					"fr": "Baie de l'Ascension",
 					"zh": "攀天海湾"
 				},
 				"sector_id": 973,
-				"type": "keep",
-				"coord": [13035, 12957],
-				"chat_link": "[&DCEAAABgAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DEEAAABgAAAA]",
+				"coord": [14327, 12757],
 				"id": "96-65",
 				"name": {
-					"en": "Orchard Overlook",
 					"de": "Obstgarten-Aussichtspunkt",
+					"en": "Orchard Overlook",
 					"es": "Mirador del Huerto",
 					"fr": "Belvédère du Verger",
 					"zh": "果园瞭望台"
 				},
 				"sector_id": 1384,
-				"type": "ruins",
-				"coord": [14327, 12757],
-				"chat_link": "[&DEEAAABgAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCYAAABgAAAA]",
+				"coord": [13445, 12078],
 				"id": "96-38",
 				"name": {
-					"en": "Woodhaven",
 					"de": "Wald-Freistatt",
+					"en": "Woodhaven",
 					"es": "Refugio Forestal",
 					"fr": "Boisrefuge",
 					"zh": "荒木岗"
 				},
 				"sector_id": 988,
-				"type": "tower",
-				"coord": [13445, 12078],
-				"chat_link": "[&DCYAAABgAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DCcAAABgAAAA]",
+				"coord": [14083, 11228],
 				"id": "96-39",
 				"name": {
-					"en": "The Spiritholme",
 					"de": "Der Geistholm",
+					"en": "The Spiritholme",
 					"es": "La Isleta Espiritual",
 					"fr": "Le Heaume spirituel",
 					"zh": "灵魂沙洲"
 				},
 				"sector_id": 978,
-				"type": "camp",
-				"coord": [14083, 11228],
-				"chat_link": "[&DCcAAABgAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DEAAAABgAAAA]",
+				"coord": [13859, 12703],
 				"id": "96-64",
 				"name": {
-					"en": "Bauer's Estate",
 					"de": "Bauers Anwesen",
+					"en": "Bauer's Estate",
 					"es": "Hacienda de Bauer",
 					"fr": "Domaine de Bauer",
 					"zh": "鲍尔庄园"
 				},
 				"sector_id": 1374,
-				"type": "ruins",
-				"coord": [13859, 12703],
-				"chat_link": "[&DEAAAABgAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCUAAABgAAAA]",
+				"coord": [14054, 12436],
 				"id": "96-37",
 				"name": {
-					"en": "Garrison",
 					"de": "Festung von",
+					"en": "Garrison",
 					"es": "Fuerte",
 					"fr": "- Garnison",
 					"zh": "要塞"
 				},
 				"sector_id": 976,
-				"type": "keep",
-				"coord": [14054, 12436],
-				"chat_link": "[&DCUAAABgAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DDUAAABgAAAA]",
+				"coord": [13258, 13454],
 				"id": "96-53",
 				"name": {
-					"en": "Redvale Refuge",
 					"de": "Rottal-Zuflucht",
+					"en": "Redvale Refuge",
 					"es": "Refugio Vallerrojo",
 					"fr": "Refuge de Valrouge",
 					"zh": "红谷避难所"
 				},
 				"sector_id": 985,
-				"type": "camp",
-				"coord": [13258, 13454],
-				"chat_link": "[&DDUAAABgAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DDQAAABgAAAA]",
+				"coord": [13221, 12199],
 				"id": "96-52",
 				"name": {
-					"en": "Godslore",
 					"de": "Gottessage",
+					"en": "Godslore",
 					"es": "Sabiduría de los Dioses",
 					"fr": "Savoir divin",
 					"zh": "神学之地"
 				},
 				"sector_id": 991,
-				"type": "camp",
-				"coord": [13221, 12199],
-				"chat_link": "[&DDQAAABgAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DDMAAABgAAAA]",
+				"coord": [15032, 12136],
 				"id": "96-51",
 				"name": {
-					"en": "Stargrove",
 					"de": "Sternhain",
+					"en": "Stargrove",
 					"es": "Arboleda de las Estrellas",
 					"fr": "Bosquet étoilé",
 					"zh": "辰星之林"
 				},
 				"sector_id": 986,
-				"type": "camp",
-				"coord": [15032, 12136],
-				"chat_link": "[&DDMAAABgAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DEIAAABgAAAA]",
+				"coord": [14362, 13112],
 				"id": "96-66",
 				"name": {
-					"en": "Carver's Ascent",
 					"de": "Aufstieg des Schnitzers",
+					"en": "Carver's Ascent",
 					"es": "Ascenso del Trinchador",
 					"fr": "Côte du couteau",
 					"zh": "雕塑者之坡"
 				},
 				"sector_id": 1382,
-				"type": "ruins",
-				"coord": [14362, 13112],
-				"chat_link": "[&DEIAAABgAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCIAAABgAAAA]",
+				"coord": [14081, 14020],
 				"id": "96-34",
 				"name": {
-					"en": "Champion's Demesne",
 					"de": "Champions Landsitz",
+					"en": "Champion's Demesne",
 					"es": "Patrimonio del Campeón",
 					"fr": "Fief du Champion",
 					"zh": "冠军领土"
 				},
 				"sector_id": 984,
-				"type": "camp",
-				"coord": [14081, 14020],
-				"chat_link": "[&DCIAAABgAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DCQAAABgAAAA]",
+				"coord": [14581, 13410],
 				"id": "96-36",
 				"name": {
-					"en": "Greenlake",
 					"de": "Grünsee",
+					"en": "Greenlake",
 					"es": "Lagoverde",
 					"fr": "Lac vert",
 					"zh": "翠绿之湖"
 				},
 				"sector_id": 989,
-				"type": "tower",
-				"coord": [14581, 13410],
-				"chat_link": "[&DCQAAABgAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DDIAAABgAAAA]",
+				"coord": [15021, 13501],
 				"id": "96-50",
 				"name": {
-					"en": "Greenwater Lowlands",
 					"de": "Grünwasser-Tiefland",
+					"en": "Greenwater Lowlands",
 					"es": "Tierras bajas de Aguaverde",
 					"fr": "Basses terres d'Eau-Verdoyante",
 					"zh": "绿水低地"
 				},
 				"sector_id": 983,
-				"type": "camp",
-				"coord": [15021, 13501],
-				"chat_link": "[&DDIAAABgAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DD8AAABgAAAA]",
+				"coord": [13761, 13075],
 				"id": "96-63",
 				"name": {
-					"en": "Battle's Hollow",
 					"de": "Schlachten-Senke",
+					"en": "Battle's Hollow",
 					"es": "Hondonada de la Batalla",
 					"fr": "Vallon de bataille",
 					"zh": "战斗山谷"
 				},
 				"sector_id": 1386,
-				"type": "ruins",
-				"coord": [13761, 13075],
-				"chat_link": "[&DD8AAABgAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCgAAABgAAAA]",
+				"coord": [14683, 12030],
 				"id": "96-40",
 				"name": {
-					"en": "Dawn's Eyrie",
 					"de": "Horst der Morgendämmerung",
+					"en": "Dawn's Eyrie",
 					"es": "Aguilera del Alba",
 					"fr": "Repaire de l'aube",
 					"zh": "破晓高地"
 				},
 				"sector_id": 987,
-				"type": "tower",
-				"coord": [14683, 12030],
-				"chat_link": "[&DCgAAABgAAAA]"
+				"type": "tower"
 			}
 		],
 		"95": [
 			{
+				"chat_link": "[&DD4AAABfAAAA]",
+				"coord": [6897, 13980],
 				"id": "95-62",
 				"name": {
-					"en": "Temple of the Fallen",
 					"de": "Tempel der Gefallenen",
+					"en": "Temple of the Fallen",
 					"es": "Templo de los Caídos",
 					"fr": "Temple des défunts",
 					"zh": "逝者神殿"
 				},
 				"sector_id": 1376,
-				"type": "ruins",
-				"coord": [6897, 13980],
-				"chat_link": "[&DD4AAABfAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCMAAABfAAAA]",
+				"coord": [6521, 13979],
 				"id": "95-35",
 				"name": {
-					"en": "Bluebriar",
 					"de": "Blaustrauch",
+					"en": "Bluebriar",
 					"es": "Zarzazul",
 					"fr": "Bruyazur",
 					"zh": "蓝荆地"
 				},
 				"sector_id": 1009,
-				"type": "tower",
-				"coord": [6521, 13979],
-				"chat_link": "[&DCMAAABfAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DCAAAABfAAAA]",
+				"coord": [8087, 13521],
 				"id": "95-32",
 				"name": {
-					"en": "Shadaran Hills",
 					"de": "Shadaran-Hügel",
+					"en": "Shadaran Hills",
 					"es": "Colinas Shadaran",
 					"fr": "Collines Shadaran",
 					"zh": "夏达然丘陵"
 				},
 				"sector_id": 996,
-				"type": "keep",
-				"coord": [8087, 13521],
-				"chat_link": "[&DCAAAABfAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DCEAAABfAAAA]",
+				"coord": [5867, 13597],
 				"id": "95-33",
 				"name": {
-					"en": "Dreadfall Bay",
 					"de": "Schreckensfall-Bucht",
+					"en": "Dreadfall Bay",
 					"es": "Bahía Salto Aciago",
 					"fr": "Baie du Noir déclin",
 					"zh": "恐惧海湾"
 				},
 				"sector_id": 999,
-				"type": "keep",
-				"coord": [5867, 13597],
-				"chat_link": "[&DCEAAABfAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DEEAAABfAAAA]",
+				"coord": [7159, 13397],
 				"id": "95-65",
 				"name": {
-					"en": "Cohen's Overlook",
 					"de": "Cohens Aussichtspunkt",
+					"en": "Cohen's Overlook",
 					"es": "Mirador de Cohen",
 					"fr": "Belvédère de Cohen",
 					"zh": "科亨瞭望台"
 				},
 				"sector_id": 1377,
-				"type": "ruins",
-				"coord": [7159, 13397],
-				"chat_link": "[&DEEAAABfAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCYAAABfAAAA]",
+				"coord": [6277, 12718],
 				"id": "95-38",
 				"name": {
-					"en": "Sunnyhill",
 					"de": "Sonnenhügel",
+					"en": "Sunnyhill",
 					"es": "Colina Soleada",
 					"fr": "Colline ensoleillée",
 					"zh": "旭光之丘"
 				},
 				"sector_id": 1007,
-				"type": "tower",
-				"coord": [6277, 12718],
-				"chat_link": "[&DCYAAABfAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DCcAAABfAAAA]",
+				"coord": [6915, 11868],
 				"id": "95-39",
 				"name": {
-					"en": "The Titanpaw",
 					"de": "Die Titanenpranke",
+					"en": "The Titanpaw",
 					"es": "La Garra del Titán",
 					"fr": "Bras du Titan",
 					"zh": "泰坦之爪"
 				},
 				"sector_id": 998,
-				"type": "camp",
-				"coord": [6915, 11868],
-				"chat_link": "[&DCcAAABfAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DEAAAABfAAAA]",
+				"coord": [6691, 13343],
 				"id": "95-64",
 				"name": {
-					"en": "Gertzz's Estate",
 					"de": "Gertzz' Anwesen",
+					"en": "Gertzz's Estate",
 					"es": "Hacienda de Gertzz",
 					"fr": "Domaine de Gertzz",
 					"zh": "格兹庄园"
 				},
 				"sector_id": 1388,
-				"type": "ruins",
-				"coord": [6691, 13343],
-				"chat_link": "[&DEAAAABfAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCUAAABfAAAA]",
+				"coord": [6886, 13076],
 				"id": "95-37",
 				"name": {
-					"en": "Garrison",
 					"de": "Festung von",
+					"en": "Garrison",
 					"es": "Fuerte",
 					"fr": "- Garnison",
 					"zh": "要塞"
 				},
 				"sector_id": 992,
-				"type": "keep",
-				"coord": [6886, 13076],
-				"chat_link": "[&DCUAAABfAAAA]"
+				"type": "keep"
 			},
 			{
+				"chat_link": "[&DDUAAABfAAAA]",
+				"coord": [6090, 14094],
 				"id": "95-53",
 				"name": {
-					"en": "Bluevale Refuge",
 					"de": "Blautal-Zuflucht",
+					"en": "Bluevale Refuge",
 					"es": "Refugio Valleazul",
 					"fr": "Refuge de Bleuval",
 					"zh": "蓝谷避难所"
 				},
 				"sector_id": 1005,
-				"type": "camp",
-				"coord": [6090, 14094],
-				"chat_link": "[&DDUAAABfAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DDQAAABfAAAA]",
+				"coord": [6053, 12839],
 				"id": "95-52",
 				"name": {
-					"en": "Faithleap",
 					"de": "Glaubenssprung",
+					"en": "Faithleap",
 					"es": "Salto de Fe",
 					"fr": "Saut de la Foi",
 					"zh": "信仰之跃"
 				},
 				"sector_id": 1010,
-				"type": "camp",
-				"coord": [6053, 12839],
-				"chat_link": "[&DDQAAABfAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DDMAAABfAAAA]",
+				"coord": [7864, 12776],
 				"id": "95-51",
 				"name": {
-					"en": "Foghaven",
 					"de": "Nebel-Freistatt",
+					"en": "Foghaven",
 					"es": "Refugio Neblinoso",
 					"fr": "Havre gris",
 					"zh": "迷雾避难所"
 				},
 				"sector_id": 995,
-				"type": "camp",
-				"coord": [7864, 12776],
-				"chat_link": "[&DDMAAABfAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DEIAAABfAAAA]",
+				"coord": [7194, 13752],
 				"id": "95-66",
 				"name": {
-					"en": "Patrick's Ascent",
 					"de": "Patricks Aufstieg",
+					"en": "Patrick's Ascent",
 					"es": "Ascenso de Patrick",
 					"fr": "Ascension de Patrick",
 					"zh": "派崔克坡道"
 				},
 				"sector_id": 1380,
-				"type": "ruins",
-				"coord": [7194, 13752],
-				"chat_link": "[&DEIAAABfAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCIAAABfAAAA]",
+				"coord": [6913, 14660],
 				"id": "95-34",
 				"name": {
-					"en": "Hero's Lodge",
 					"de": "Heldenhalle",
+					"en": "Hero's Lodge",
 					"es": "Albergue del Héroe",
 					"fr": "Pavillon du Héros",
 					"zh": "英雄酒馆"
 				},
 				"sector_id": 1004,
-				"type": "camp",
-				"coord": [6913, 14660],
-				"chat_link": "[&DCIAAABfAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DCQAAABfAAAA]",
+				"coord": [7413, 14050],
 				"id": "95-36",
 				"name": {
-					"en": "Redlake",
 					"de": "Rotsee",
+					"en": "Redlake",
 					"es": "Lagorrojo",
 					"fr": "Lac rouge",
 					"zh": "血红之湖"
 				},
 				"sector_id": 1008,
-				"type": "tower",
-				"coord": [7413, 14050],
-				"chat_link": "[&DCQAAABfAAAA]"
+				"type": "tower"
 			},
 			{
+				"chat_link": "[&DDIAAABfAAAA]",
+				"coord": [7853, 14141],
 				"id": "95-50",
 				"name": {
-					"en": "Redwater Lowlands",
 					"de": "Rotwasser-Tiefland",
+					"en": "Redwater Lowlands",
 					"es": "Tierras Bajas de Aguarroja",
 					"fr": "Basses terres de Rubicon",
 					"zh": "赤水低地"
 				},
 				"sector_id": 1003,
-				"type": "camp",
-				"coord": [7853, 14141],
-				"chat_link": "[&DDIAAABfAAAA]"
+				"type": "camp"
 			},
 			{
+				"chat_link": "[&DD8AAABfAAAA]",
+				"coord": [6593, 13715],
 				"id": "95-63",
 				"name": {
-					"en": "Norfolk's Hollow",
 					"de": "Norfolks Senke",
+					"en": "Norfolk's Hollow",
 					"es": "Hondonada de Norfolk",
 					"fr": "Vallon de Norfolk",
 					"zh": "诺弗克山谷"
 				},
 				"sector_id": 1383,
-				"type": "ruins",
-				"coord": [6593, 13715],
-				"chat_link": "[&DD8AAABfAAAA]"
+				"type": "ruins"
 			},
 			{
+				"chat_link": "[&DCgAAABfAAAA]",
+				"coord": [7515, 12670],
 				"id": "95-40",
 				"name": {
-					"en": "Cragtop",
 					"de": "Schroffgipfel",
+					"en": "Cragtop",
 					"es": "Cumbrepeñasco",
 					"fr": "Sommet de Hautcrag",
 					"zh": "崖顶"
 				},
 				"sector_id": 1006,
-				"type": "tower",
-				"coord": [7515, 12670],
-				"chat_link": "[&DCgAAABfAAAA]"
+				"type": "tower"
 			}
 		]
 	}

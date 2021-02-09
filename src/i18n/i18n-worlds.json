@@ -1,0 +1,565 @@
+{
+	"i18n_worlds": {
+		"1001": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Amboss-Stein",
+				"en": "Anvil Rock",
+				"es": "Roca del Yunque",
+				"fr": "Rocher de l'enclume",
+				"zh": "铁砧石"
+			}
+		},
+		"1002": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Borlis-Pass",
+				"en": "Borlis Pass",
+				"es": "Paso de Borlis",
+				"fr": "Passage de Borlis",
+				"zh": "波里斯小径"
+			}
+		},
+		"1003": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Yakbiegung",
+				"en": "Yak's Bend",
+				"es": "Declive del Yak",
+				"fr": "Courbe du Yak",
+				"zh": "牦牛拐角"
+			}
+		},
+		"1004": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Steinkreis von Denravi",
+				"en": "Henge of Denravi",
+				"es": "Círculo de Denravi",
+				"fr": "Cromlech de Denravi",
+				"zh": "德拉维石阵"
+			}
+		},
+		"1005": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Maguuma",
+				"en": "Maguuma",
+				"es": "Maguuma",
+				"fr": "Maguuma",
+				"zh": "迈古玛"
+			}
+		},
+		"1006": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Hochofen der Betrübnis",
+				"en": "Sorrow's Furnace",
+				"es": "Fragua del Pesar",
+				"fr": "Fournaise des lamentations",
+				"zh": "悲伤熔炉"
+			}
+		},
+		"1007": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Tor des Wahnsinns",
+				"en": "Gate of Madness",
+				"es": "Puerta de la Locura",
+				"fr": "Porte de la folie",
+				"zh": "疯狂之门"
+			}
+		},
+		"1008": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Jade-Steinbruch",
+				"en": "Jade Quarry",
+				"es": "Cantera de Jade",
+				"fr": "Carrière de jade",
+				"zh": "翠玉矿洞"
+			}
+		},
+		"1009": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Fort Espenwald",
+				"en": "Fort Aspenwood",
+				"es": "Fuerte Aspenwood",
+				"fr": "Fort Trembleforêt",
+				"zh": "白杨堡垒"
+			}
+		},
+		"1010": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Ehmry-Bucht",
+				"en": "Ehmry Bay",
+				"es": "Bahía de Ehmry",
+				"fr": "Baie d'Ehmry",
+				"zh": "艾玛海湾"
+			}
+		},
+		"1011": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Sturmklippen-Insel",
+				"en": "Stormbluff Isle",
+				"es": "Isla Cimatormenta",
+				"fr": "Ile de la Falaise tumultueuse",
+				"zh": "暴风崖岛"
+			}
+		},
+		"1012": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Finsterfreistatt",
+				"en": "Darkhaven",
+				"es": "Refugio Oscuro",
+				"fr": "Refuge noir",
+				"zh": "暗黑庇护所"
+			}
+		},
+		"1013": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Heilige Halle von Rall",
+				"en": "Sanctum of Rall",
+				"es": "Sagrario de Rall",
+				"fr": "Sanctuaire de Rall",
+				"zh": "罗尔圣所"
+			}
+		},
+		"1014": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Kristallwüste",
+				"en": "Crystal Desert",
+				"es": "Desierto de Cristal",
+				"fr": "Désert de cristal",
+				"zh": "水晶沙漠"
+			}
+		},
+		"1015": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Janthir-Insel",
+				"en": "Isle of Janthir",
+				"es": "Isla de Janthir",
+				"fr": "Ile de Janthir",
+				"zh": "珍瑟之岛"
+			}
+		},
+		"1016": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Meer des Leids",
+				"en": "Sea of Sorrows",
+				"es": "Mar de los Pesares",
+				"fr": "Mer des lamentations",
+				"zh": "悲伤之海"
+			}
+		},
+		"1017": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Befleckte Küste",
+				"en": "Tarnished Coast",
+				"es": "Costa de Bronce",
+				"fr": "Côte ternie",
+				"zh": "晦暗海岸"
+			}
+		},
+		"1018": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Nördliche Zittergipfel",
+				"en": "Northern Shiverpeaks",
+				"es": "Picosescalofriantes del Norte",
+				"fr": "Cimefroides du nord",
+				"zh": "北席瓦雪山"
+			}
+		},
+		"1019": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Schwarztor",
+				"en": "Blackgate",
+				"es": "Puertanegra",
+				"fr": "Portenoire",
+				"zh": "黑暗之门"
+			}
+		},
+		"1020": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Fergusons Kreuzung",
+				"en": "Ferguson's Crossing",
+				"es": "Encrucijada de Ferguson",
+				"fr": "Croisée de Ferguson",
+				"zh": "弗格森渡口"
+			}
+		},
+		"1021": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Drachenbrand",
+				"en": "Dragonbrand",
+				"es": "Marca del Dragón",
+				"fr": "Stigmate du dragon",
+				"zh": "烙印之地"
+			}
+		},
+		"1022": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Kaineng",
+				"en": "Kaineng",
+				"es": "Kaineng",
+				"fr": "Kaineng",
+				"zh": "凯宁"
+			}
+		},
+		"1023": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Devonas Ruh",
+				"en": "Devona's Rest",
+				"es": "Descanso de Devona",
+				"fr": "Repos de Devona",
+				"zh": "德佛娜之眠"
+			}
+		},
+		"1024": {
+			"region": "NA",
+			"lang": "en",
+			"name": {
+				"de": "Eredon-Terrasse",
+				"en": "Eredon Terrace",
+				"es": "Terraza de Eredon",
+				"fr": "Plateau d'Eredon",
+				"zh": "伊雷登平台"
+			}
+		},
+		"2001": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Riss des Kummers",
+				"en": "Fissure of Woe",
+				"es": "Fisura de la Aflicción",
+				"fr": "Fissure du malheur",
+				"zh": "悲叹缝隙"
+			}
+		},
+		"2002": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Ödnis",
+				"en": "Desolation",
+				"es": "Desolación",
+				"fr": "Désolation",
+				"zh": "荒芜之地"
+			}
+		},
+		"2003": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Gandara",
+				"en": "Gandara",
+				"es": "Gandara",
+				"fr": "Gandara",
+				"zh": "甘达拉"
+			}
+		},
+		"2004": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Schwarzwasser",
+				"en": "Blacktide",
+				"es": "Marea Negra",
+				"fr": "Noirflot",
+				"zh": "黑潮"
+			}
+		},
+		"2005": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Feuerring",
+				"en": "Ring of Fire",
+				"es": "Anillo de fuego",
+				"fr": "Cercle de feu",
+				"zh": "火焰之环"
+			}
+		},
+		"2006": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Unterwelt",
+				"en": "Underworld",
+				"es": "Inframundo",
+				"fr": "Outre-monde",
+				"zh": "地下世界"
+			}
+		},
+		"2007": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Ferne Zittergipfel",
+				"en": "Far Shiverpeaks",
+				"es": "Lejanas Picosescalofriantes",
+				"fr": "Lointaines Cimefroides",
+				"zh": "席瓦雪山远境"
+			}
+		},
+		"2008": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Weißflankgrat",
+				"en": "Whiteside Ridge",
+				"es": "Cadena Laderablanca",
+				"fr": "Crête de Verseblanc",
+				"zh": "白际山脊"
+			}
+		},
+		"2009": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Ruinen von Surmia",
+				"en": "Ruins of Surmia",
+				"es": "Ruinas de Surmia",
+				"fr": "Ruines de Surmia",
+				"zh": "瑟米亚废墟"
+			}
+		},
+		"2010": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Seemannsruh",
+				"en": "Seafarer's Rest",
+				"es": "Refugio del Viajante",
+				"fr": "Repos du Marin",
+				"zh": "航海者之宁"
+			}
+		},
+		"2011": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Vaabi",
+				"en": "Vabbi",
+				"es": "Vabbi",
+				"fr": "Vabbi",
+				"zh": "瓦比"
+			}
+		},
+		"2012": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Piken-Platz",
+				"en": "Piken Square",
+				"es": "Plaza de Piken",
+				"fr": "Place Piken",
+				"zh": "派肯广场"
+			}
+		},
+		"2013": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Auroralichtung",
+				"en": "Aurora Glade",
+				"es": "Claro de la Aurora",
+				"fr": "Clairière de l'aurore",
+				"zh": "曙光林地"
+			}
+		},
+		"2014": {
+			"region": "EU",
+			"lang": "en",
+			"name": {
+				"de": "Gunnars Feste",
+				"en": "Gunnar's Hold",
+				"es": "Fuerte de Gunnar",
+				"fr": "Campement de Gunnar",
+				"zh": "纳尔要塞"
+			}
+		},
+		"2101": {
+			"region": "EU",
+			"lang": "fr",
+			"name": {
+				"de": "Jademeer [FR]",
+				"en": "Jade Sea [FR]",
+				"es": "Mar de Jade [FR]",
+				"fr": "Mer de Jade [FR]",
+				"zh": "翠玉之海 [FR]"
+			}
+		},
+		"2102": {
+			"region": "EU",
+			"lang": "fr",
+			"name": {
+				"de": "Fort Ranik [FR]",
+				"en": "Fort Ranik [FR]",
+				"es": "Fuerte Ranik [FR]",
+				"fr": "Fort Ranik [FR]",
+				"zh": "拉尼克堡 [FR]"
+			}
+		},
+		"2103": {
+			"region": "EU",
+			"lang": "fr",
+			"name": {
+				"de": "Fels der Weissagung [FR]",
+				"en": "Augury Rock [FR]",
+				"es": "Roca del Augurio [FR]",
+				"fr": "Roche de l'augure [FR]",
+				"zh": "预言之石 [FR]"
+			}
+		},
+		"2104": {
+			"region": "EU",
+			"lang": "fr",
+			"name": {
+				"de": "Vizunah-Platz [FR]",
+				"en": "Vizunah Square [FR]",
+				"es": "Plaza de Vizunah [FR]",
+				"fr": "Place de Vizunah [FR]",
+				"zh": "薇茹广场 [FR]"
+			}
+		},
+		"2105": {
+			"region": "EU",
+			"lang": "fr",
+			"name": {
+				"de": "Arborstein [FR]",
+				"en": "Arborstone [FR]",
+				"es": "Piedra Arbórea [FR]",
+				"fr": "Pierre Arborea [FR]",
+				"zh": "亚博之石 [FR]"
+			}
+		},
+		"2201": {
+			"region": "EU",
+			"lang": "de",
+			"name": {
+				"de": "Kodasch [DE]",
+				"en": "Kodash [DE]",
+				"es": "Kodash [DE]",
+				"fr": "Kodash [DE]",
+				"zh": "圣洁之石 [DE]"
+			}
+		},
+		"2202": {
+			"region": "EU",
+			"lang": "de",
+			"name": {
+				"de": "Flussufer [DE]",
+				"en": "Riverside [DE]",
+				"es": "Ribera [DE]",
+				"fr": "Provinces fluviales [DE]",
+				"zh": "河畔 [DE]"
+			}
+		},
+		"2203": {
+			"region": "EU",
+			"lang": "de",
+			"name": {
+				"de": "Elonaspitze [DE]",
+				"en": "Elona Reach [DE]",
+				"es": "Cañón de Elona [DE]",
+				"fr": "Bief d'Elona [DE]",
+				"zh": "伊伦娜海岸 [DE]"
+			}
+		},
+		"2204": {
+			"region": "EU",
+			"lang": "de",
+			"name": {
+				"de": "Abaddons Maul [DE]",
+				"en": "Abaddon's Mouth [DE]",
+				"es": "Boca de Abaddon [DE]",
+				"fr": "Bouche d'Abaddon [DE]",
+				"zh": "阿伯顿之口 [DE]"
+			}
+		},
+		"2205": {
+			"region": "EU",
+			"lang": "de",
+			"name": {
+				"de": "Drakkar-See [DE]",
+				"en": "Drakkar Lake [DE]",
+				"es": "Lago Drakkar [DE]",
+				"fr": "Lac Drakkar [DE]",
+				"zh": "德拉克湖 [DE]"
+			}
+		},
+		"2206": {
+			"region": "EU",
+			"lang": "de",
+			"name": {
+				"de": "Millersund [DE]",
+				"en": "Miller's Sound [DE]",
+				"es": "Estrecho de Miller [DE]",
+				"fr": "Détroit de Miller [DE]",
+				"zh": "米勒之声 [DE]"
+			}
+		},
+		"2207": {
+			"region": "EU",
+			"lang": "de",
+			"name": {
+				"de": "Dzagonur [DE]",
+				"en": "Dzagonur [DE]",
+				"es": "Dzagonur [DE]",
+				"fr": "Dzagonur [DE]",
+				"zh": "扎格诺 [DE]"
+			}
+		},
+		"2301": {
+			"region": "EU",
+			"lang": "es",
+			"name": {
+				"de": "Baruch-Bucht [ES]",
+				"en": "Baruch Bay [SP]",
+				"es": "Bahía de Baruch [ES]",
+				"fr": "Baie de Baruch [SP]",
+				"zh": "巴鲁克海湾 [SP]"
+			}
+		}
+	}
+}

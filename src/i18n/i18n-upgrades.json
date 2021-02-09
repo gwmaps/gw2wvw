@@ -1,0 +1,361 @@
+{
+	"i18n_guild_upgrades": {
+		"147": {
+			"description": {
+				"de": "Die Wachen erhalten eine Eisenhaut, die den erlittenen Schaden um 50 % verringert.",
+				"en": "Guards gain Iron Hide, reducing incoming damage by 50%.",
+				"es": "Los guardias ganan Pellejo de hierro, reduciendo el daño recibido en un 50 %.",
+				"fr": "Les gardes bénéficient de Peau de fer, ce qui réduit les dégâts subis de 50%.",
+				"zh": "守卫获得铁皮技能，受到的伤害降低50%。"
+			},
+			"icon": "https://render.guildwars2.com/file/E7D12395B3540D13250CA93720304A4FDFC2D508/1202673.png",
+			"name": {
+				"de": "Eiserne Wachen",
+				"en": "Iron Guards",
+				"es": "Guardias de hierro",
+				"fr": "Gardes de fer",
+				"zh": "钢铁守卫"
+			}
+		},
+		"168": {
+			"description": {
+				"de": "Die Brunnen im Hof des Schlosses verleihen den Verbündeten Tarnung.",
+				"en": "The fountains in the castle's courtyard grant stealth to allies.",
+				"es": "Las fuentes del patio del castillo otorgan sigilo a los aliados.",
+				"fr": "Les fontaines situées dans la cour du château confèrent Furtivité aux alliés.",
+				"zh": "城堡庭院中的泉水可给予盟友潜行。"
+			},
+			"icon": "https://render.guildwars2.com/file/E55106630B3CEFC8C12977370550DA660A7AB725/1202666.png",
+			"name": {
+				"de": "Tarnendes Wasser",
+				"en": "Cloaking Waters",
+				"es": "Aguas de sigilo",
+				"fr": "Eaux dissimulatrices",
+				"zh": "隐身泉水"
+			}
+		},
+		"178": {
+			"description": {
+				"de": "Aktiviert Ihr diese Taktik, wird vorübergehend beim Ziel eine unangreifbare Wegmarke erstellt.",
+				"en": "Activate this Tactic to temporarily create an uncontestable waypoint at the objective.",
+				"es": "Activa esta táctica para crear en el objetivo un punto de ruta que no se puede disputar de forma temporal.",
+				"fr": "Activez cette tactique pour créer temporairement un point de passage d'urgence à l'objectif. Ce point de passage ne peut pas être contesté.",
+				"zh": "激活此战术，在此处暂时创造一个未争夺的传送点。"
+			},
+			"icon": "https://render.guildwars2.com/file/1EFC4507C290C94833505903AC30383240E2B70D/1202668.png",
+			"name": {
+				"de": "Notwegmarke",
+				"en": "Emergency Waypoint",
+				"es": "Punto de ruta de emergencia",
+				"fr": "Point de passage d'urgence",
+				"zh": "紧急传送点"
+			}
+		},
+		"183": {
+			"description": {
+				"de": "Oberhalb des Tors des Ziels werden Automatik-Türme bereitgestellt.",
+				"en": "Automatic turrets are deployed above the objective's gates.",
+				"es": "Se despliegan torretas automáticas sobre las puertas del objetivo.",
+				"fr": "Des tourelles automatiques sont déployées au-dessus des portes de l'objectif.",
+				"zh": "在大门上方部署自动炮台。"
+			},
+			"icon": "https://render.guildwars2.com/file/6C6554C090A8C413FDCA050FF49DA74AAA9F7223/1202679.png",
+			"name": {
+				"de": "Automatik-Türme",
+				"en": "Auto Turrets",
+				"es": "Torretas automáticas",
+				"fr": "Tourelles automatiques",
+				"zh": "自动炮台"
+			}
+		},
+		"222": {
+			"description": {
+				"de": "Aktiviert diese Taktik, um einen Dünenroller an Eurem Ziel herbeizurufen. Der Anwender wird in einen Wagen verwandelt, was ihm erhöhte Mobilität und Belagerungsschaden verleiht.",
+				"en": "Activate this tactic to summon a dune roller at your objective. The user is transformed into a car, granting them increased mobility and siege damage.",
+				"es": "Activa esta táctica para invocar un recorredunas en tu objetivo. El usuario se transforma en un coche, otorgándole movilidad y daño de asedio aumentados.",
+				"fr": "Activez cette tactique pour invoquer un chevaucheur des dunes à votre objectif. L'utilisateur est transformé en véhicule, augmentant ainsi sa mobilité et les dégâts infligés par les engins de siège.",
+				"zh": "激活此战术来召唤一辆沙丘战车。使用者变身为一辆机车，提升速度，获得攻城伤害。"
+			},
+			"icon": "https://render.guildwars2.com/file/78DFD30291C9FFBD2B957F1D7D7219B2C1F22A9B/1202664.png",
+			"name": {
+				"de": "Dünenroller",
+				"en": "Dune Roller",
+				"es": "Recorredunas",
+				"fr": "Conduite dans les dunes",
+				"zh": "沙丘战车"
+			}
+		},
+		"298": {
+			"description": {
+				"de": "Aktiviert Ihr diese Taktik, wird vorübergehend eine Flotte von Luftschiffen herbeigerufen, die das Schloss vor Eindringlingen beschützt.",
+				"en": "Activate this Tactic to temporarily summon a fleet of airships that will protect the castle from invaders.",
+				"es": "Activa esta táctica para invocar una flota de aeronaves que proteja el castillo de invasores de forma temporal.",
+				"fr": "Activez cette tactique pour invoquer temporairement une flotte d'aéronefs dans le but de défendre le château des envahisseurs.",
+				"zh": "激活此战术，召唤一支飞船舰队，在短时间内保护城堡，攻击入侵者。"
+			},
+			"icon": "https://render.guildwars2.com/file/F4AC42D4B822966EB5300B1DFA2E5893D0283506/1202661.png",
+			"name": {
+				"de": "Luftschiff-Verteidigung",
+				"en": "Airship Defense",
+				"es": "Aeronaves defensivas",
+				"fr": "Défense aérienne",
+				"zh": "飞船防御"
+			}
+		},
+		"306": {
+			"description": {
+				"de": "Platziert Bomben im Vorratslager, die explodieren, falls das Ziel von einem gegnerischen Team erobert wird. Bei dieser Explosion werden alle verbliebenen Vorräte des Ziels vernichtet.",
+				"en": "Deploy bombs at the supply depot that will explode if the objective is captured by an enemy team. The explosion will destroy all remaining supply at the objective.",
+				"es": "Colocas bombas en el depósito de suministros que explotarán si un equipo enemigo captura el objetivo. La explosión destruirá todos los suministros que queden en el objetivo.",
+				"fr": "Des bombes sont placées au dépôt de ravitaillement et explosent si l'objectif est capturé par l'équipe ennemie. L'explosion détruit tout le ravitaillement restant de cet objectif.",
+				"zh": "在补给仓内埋设炸弹，被敌方占领时爆炸，摧毁所有剩余的补给。"
+			},
+			"icon": "https://render.guildwars2.com/file/0808CFC0800F6ACBFAFE135D1F10F2E957FBF8D8/1202677.png",
+			"name": {
+				"de": "Lager sabotieren",
+				"en": "Sabotage Depot",
+				"es": "Depósito saboteado",
+				"fr": "Dépôt saboté",
+				"zh": "炸药仓库"
+			}
+		},
+		"307": {
+			"description": {
+				"de": "Dolyaks erhalten mehr Lebenspunkte und Zähigkeit.",
+				"en": "Dolyaks gain increased health and toughness.",
+				"es": "Los dolyak ganan salud y dureza.",
+				"fr": "Les dolyaks bénéficient d'un bonus de Santé et de Robustesse.",
+				"zh": "提升石牦牛的生命值和坚韧。"
+			},
+			"icon": "https://render.guildwars2.com/file/777EB69142514009C129B42DF4B9957AC5D8E1E4/1202662.png",
+			"name": {
+				"de": "Gepanzerte Dolyaks",
+				"en": "Armored Dolyaks",
+				"es": "Dolyak acorazados",
+				"fr": "Dolyaks renforcés",
+				"zh": "装甲牦牛"
+			}
+		},
+		"329": {
+			"description": {
+				"de": "Senkt den Schaden von Nicht-Belagerungswaffen an Kanonen, Mörsern und Öltöpfen stark.",
+				"en": "Greatly reduces non-siege weapon damage to cannons, mortars, and oil pots.",
+				"es": "Reduce drásticamente el daño que causan las armas que no son de asedio a los cañones, a los morteros y a las ollas de aceite.",
+				"fr": "Réduit les dégâts infligés par les personnages aux canons, mortiers et chaudrons d'huile.",
+				"zh": "大幅度降低非攻城武器对加农炮、迫击炮和油锅的伤害。"
+			},
+			"icon": "https://render.guildwars2.com/file/F10C08F3A812FBC1B3BD691C0A609FEBD30AD945/1202670.png",
+			"name": {
+				"de": "Stahlharte Belagerung",
+				"en": "Hardened Siege",
+				"es": "Asedio endurecido",
+				"fr": "Siège consolidé",
+				"zh": "硬质器械"
+			}
+		},
+		"345": {
+			"description": {
+				"de": "Ruft am Ziel ein Zentaurenbanner herbei, das demjenigen, der es verwendet, mächtige Angriff-Fertigkeiten und eine Trotz-Leiste verleiht.",
+				"en": "Summon a Centaur Banner at your objective. This banner provides the wielder access to powerful offensive skills, as well as a break bar.",
+				"es": "Invoca un estandarte de centauro en tu objetivo. Este estandarte proporciona al portador acceso a poderosas habilidades ofensivas, además de una barra de desafío.",
+				"fr": "Une bannière du Centaure apparaît à l'objectif et donne accès à des compétences offensives puissantes et une barre de défiance à celui qui l'équipe.",
+				"zh": "召唤一面半人马旗帜，持有者可使用强大的攻击技能，同时获得蔑视进度控制条。"
+			},
+			"icon": "https://render.guildwars2.com/file/1BD50464CBB27F68ADE647D15495A830A290D7F7/1202663.png",
+			"name": {
+				"de": "Zentaurenbanner",
+				"en": "Centaur Banner",
+				"es": "Estandarte de centauro",
+				"fr": "Bannière du Centaure",
+				"zh": "人马旗帜"
+			}
+		},
+		"365": {
+			"description": {
+				"de": "Dolyaks tragen jetzt doppelt so viele Vorräte.",
+				"en": "Dolyaks now carry twice as much supply.",
+				"es": "Los dolyak ahora llevan el doble de suministros.",
+				"fr": "Les dolyaks transportent désormais deux fois plus de ravitaillement.",
+				"zh": "石牦牛运输的补给翻倍。"
+			},
+			"icon": "https://render.guildwars2.com/file/774F39D751E4D454100E9F30BB550294F41948CC/1202675.png",
+			"name": {
+				"de": "Bepackte Dolyaks",
+				"en": "Packed Dolyaks",
+				"es": "Dolyak cargados",
+				"fr": "Dolyaks chargés",
+				"zh": "货运牦牛"
+			}
+		},
+		"383": {
+			"description": {
+				"de": "Aktiviert Ihr diese Taktik, sind die nächsten Dolyaks unverwundbar und somit ist garantiert, dass sie ihr Ziel erreichen werden.",
+				"en": "Activate this Tactic to make the next set of dolyaks invincible, guaranteeing that they will reach their destination.",
+				"es": "Activa esta táctica para hacer invencible el siguiente grupo de dolyak, garantizando así que lleguen a su destino.",
+				"fr": "Activez cette tactique pour rendre invincible le prochain convoi de dolyaks.",
+				"zh": "激活此战术，让下一批石牦牛无敌，保证它们可以到达目的地。"
+			},
+			"icon": "https://render.guildwars2.com/file/B1466017D7D574EF9F0643A13C0FCB45A8047DC0/1202671.png",
+			"name": {
+				"de": "Unverwundbare Dolyaks",
+				"en": "Invulnerable Dolyaks",
+				"es": "Dolyak invulnerables",
+				"fr": "Dolyaks invulnérables",
+				"zh": "无敌牦牛"
+			}
+		},
+		"389": {
+			"description": {
+				"de": "Senkt den Schaden von Nicht-Belagerungswaffen an Toren stark.",
+				"en": "Greatly reduces nonsiege weapon damage to gates.",
+				"es": "Reduce drásticamente el daño que causan la armas que no son de asedio a las puertas.",
+				"fr": "Réduit grandement les dégâts qu'infligent les armes aux portes (sauf les armes de siège).",
+				"zh": "大幅度降低非攻城武器对大门的伤害。"
+			},
+			"icon": "https://render.guildwars2.com/file/6D4913BCD6E14F4C34B50CFE5FC5A4DAFB263B65/1202669.png",
+			"name": {
+				"de": "Stahlharte Tore",
+				"en": "Hardened Gates",
+				"es": "Puertas endurecidas",
+				"fr": "Portes consolidées",
+				"zh": "硬质大门"
+			}
+		},
+		"399": {
+			"description": {
+				"de": "Ruft am Ziel ein Schildkrötenbanner herbei, das demjenigen, der es verwendet, mächtige Verteidigung-Fertigkeiten und eine Trotz-Leiste verleiht.",
+				"en": "Summon a Turtle Banner at your objective. This banner provides the wielder access to powerful defensive skills, as well as a break bar.",
+				"es": "Invoca un estandarte de tortuga en tu objetivo. Este estandarte proporciona al portador acceso a poderosas habilidades defensivas, además de una barra de desafío.",
+				"fr": "Une bannière de la tortue apparaît à l'objectif et donne accès à des compétences défensives puissantes et une barre de défiance à celui qui l'équipe.",
+				"zh": "召唤一面乌龟旗帜，持有者可使用强大的防御技能，同时获得蔑视进度控制条。"
+			},
+			"icon": "https://render.guildwars2.com/file/A5B1A95BD27452FF4FB50541681459E3CA681C4C/1202680.png",
+			"name": {
+				"de": "Schildkrötenbanner",
+				"en": "Turtle Banner",
+				"es": "Estandarte de tortuga",
+				"fr": "Bannière de la tortue",
+				"zh": "乌龟旗帜"
+			}
+		},
+		"418": {
+			"description": {
+				"de": "Innerhalb der Begrenzungen der Feste verdoppelt sich für verbündete Spieler die Effektivität der Zielaura, die von der Festung ausstrahlt wird.",
+				"en": "Allied players gain double effectiveness of the keep's objective aura while within the perimeter of the keep.",
+				"es": "Los jugadores aliados ganan el doble de efectividad del aura del objetivo de la fortaleza mientras se mantienen en el perímetro de la misma.",
+				"fr": "L'efficacité de l'aura de l'objectif est doublée pour les joueurs alliés tant qu'ils se trouvent dans le périmètre du fort.",
+				"zh": "友方玩家在要塞周边时，所获得的要塞领地光环效果翻倍。"
+			},
+			"icon": "https://render.guildwars2.com/file/59E8C3B304D5610EA3A126265425BB66F7F446E1/1202676.png",
+			"name": {
+				"de": "Präsenz der Feste",
+				"en": "Presence of the Keep",
+				"es": "Presencia de la fortaleza",
+				"fr": "Présence du fort",
+				"zh": "要塞地标"
+			}
+		},
+		"483": {
+			"description": {
+				"de": "Aktiviert Ihr diese Taktik, werden am Ziel 100 Vorräte bereitgestellt.",
+				"en": "Activate this Tactic to have 100 supply deposited at the objective.",
+				"es": "Activa esta táctica para que se depositen 100 suministros en el objetivo.",
+				"fr": "Activez cette tactique pour ajouter 100 unités de ravitaillement à l'objectif.",
+				"zh": "激活此战术，为此处增加100点补给。"
+			},
+			"icon": "https://render.guildwars2.com/file/24CF0D4FF0E918774D643F3038536B5401150DFD/1202674.png",
+			"name": {
+				"de": "Kleine Versorgungslieferung",
+				"en": "Minor Supply Drop",
+				"es": "Entrega de suministros pequeña",
+				"fr": "Livraison de ravitaillement mineure",
+				"zh": "小型补给投放"
+			}
+		},
+		"513": {
+			"description": {
+				"de": "Aktiviert Ihr diese Taktik, werden die Mauern und Tore des Ziels vorübergehend unverwundbar.",
+				"en": "Activate this Tactic to temporarily make all walls and gates at the objective invulnerable.",
+				"es": "Activa esta táctica para hacer invulnerables todos los muros y las puertas del objetivo de forma temporal.",
+				"fr": "Activez cette tactique pour rendre temporairement invulnérables tous les murs et portes.",
+				"zh": "激活此战术，在短时间内让所有城墙和大门变得无敌。"
+			},
+			"icon": "https://render.guildwars2.com/file/ACE0ABCA230424BA6C653E52DD10431D49029603/1202672.png",
+			"name": {
+				"de": "Unverwundbare Befestigungen",
+				"en": "Invulnerable Fortifications",
+				"es": "Fortificaciones invulnerables",
+				"fr": "Fortifications invulnérables",
+				"zh": "无敌工事"
+			}
+		},
+		"559": {
+			"description": {
+				"de": "Aktiviert diese Taktik, um vorübergehend Kühle-Verursacher herbeizurufen, die Eindringlingen im Zielbereich Kühle zufügen.",
+				"en": "Activate this tactic to temporarily summon chill inducers that will chill invaders at the objective.",
+				"es": "Activa esta táctica para invocar inductores de frío que congelarán a los invasores en el objetivo de forma temporal.",
+				"fr": "Activez cette tactique pour invoquer temporairement des inducteurs de Givre qui vont infliger Givre à tous les envahisseurs situés à l'objectif.",
+				"zh": "激活此战术后在短暂时间内召唤冰冻喷雾装置，对入侵此处的敌人造成冰冻。"
+			},
+			"icon": "https://render.guildwars2.com/file/7767749D09323CF599C0BEB026B5F4AA42EB01AE/1202665.png",
+			"name": {
+				"de": "Kühlender Dunst",
+				"en": "Chilling Fog",
+				"es": "Niebla congeladora",
+				"fr": "Brume glaçante",
+				"zh": "冰冻雾气"
+			}
+		},
+		"562": {
+			"description": {
+				"de": "Dolyaks erhalten Supergeschwindigkeit.",
+				"en": "Dolyaks gain superspeed.",
+				"es": "Los dolyak ganan supervelocidad.",
+				"fr": "Les dolyaks bénéficient de Super vitesse.",
+				"zh": "石牦牛获得奔驰疾速。"
+			},
+			"icon": "https://render.guildwars2.com/file/09CBF65C0E06FD6862AB944B4B519AD1B9766ADF/1202678.png",
+			"name": {
+				"de": "Schnelle Dolyaks",
+				"en": "Speedy Dolyaks",
+				"es": "Dolyak veloces",
+				"fr": "Dolyaks véloces",
+				"zh": "速奔牦牛"
+			}
+		},
+		"583": {
+			"description": {
+				"de": "Oberhalb des Turms wird ein Aufklärungsballon positioniert, der auf der Karte kennzeichnet, wo in der Nähe sich Gegner befinden.",
+				"en": "A spy balloon is deployed above the tower, which will mark nearby enemies on the map.",
+				"es": "Se despliega un globo espía sobre la torre que marcará a los enemigos cercanos en el mapa.",
+				"fr": "Un ballon espion plane au-dessus de la tour et signale la position des ennemis sur la carte.",
+				"zh": "在塔楼上部署侦察气球，在地图上标记附近的敌人。"
+			},
+			"icon": "https://render.guildwars2.com/file/F8036AE623E530D313092C2D1952505BBF4ACF6B/1202681.png",
+			"name": {
+				"de": "Wachturm",
+				"en": "Watchtower",
+				"es": "Torre de vigilancia",
+				"fr": "Tour de guet",
+				"zh": "瞭望高塔"
+			}
+		},
+		"590": {
+			"description": {
+				"de": "Ruft am Ziel ein Drachenbanner herbei, das demjenigen, der es verwendet, mächtige Angriff-Fertigkeiten und eine Trotz-Leiste verleiht.",
+				"en": "Summon a Dragon Banner at your objective. This banner provides the wielder access to powerful offensive skills, as well as a break bar.",
+				"es": "Invoca un estandarte de dragón en tu objetivo. Este estandarte proporciona al portador acceso a poderosas habilidades ofensivas, además de una barra de desafío.",
+				"fr": "Une bannière du dragon apparaît à l'objectif et donne accès à des compétences offensives puissantes et une barre de défiance à celui qui l'équipe.",
+				"zh": "召唤一面巨龙旗帜，持有者可使用强大的攻击技能，同时获得蔑视进度控制条。"
+			},
+			"icon": "https://render.guildwars2.com/file/E8CAEEDB9E0A4168005DDE21D34AFD46AA914EDA/1202667.png",
+			"name": {
+				"de": "Drachenbanner",
+				"en": "Dragon Banner",
+				"es": "Estandarte de dragón",
+				"fr": "Bannière du dragon",
+				"zh": "巨龙旗帜"
+			}
+		}
+	}
+}

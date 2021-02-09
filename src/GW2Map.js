@@ -496,11 +496,18 @@ export default class GW2Map{
 		}
 
 		// finally create the marker
-		return new Marker(coords, {
+		let marker = new Marker(coords, {
 			pane: pane,
 			title: p.layertype === 'icon' ? p.name : null,
 			icon: icon
 		});
+
+		// assign WvW objectives to the layer element
+		if(pane === 'objective_icon'){
+			this.objectiveElements[p.id] = marker;
+		}
+
+		return marker;
 	}
 
 	/**
@@ -565,13 +572,7 @@ export default class GW2Map{
 	_renderWvW(){
 		let maps = [38, 95, 96, 1099];
 
-		// assign WvW objectives and their respective sectors to the layer element
-		this.layers.objective_icon.eachLayer(layer => {
-			if(maps.includes(layer.feature.properties.mapID)){
-				this.objectiveElements[layer.feature.properties.id] = layer;
-			}
-		});
-
+		// assign sectors to the layer element
 		this.layers.sector_poly.eachLayer(layer => {
 			if(maps.includes(layer.feature.properties.mapID) && !this.homeSectors.includes(layer.feature.properties.id)){
 				this.sectorElements[layer.feature.properties.id] = layer;

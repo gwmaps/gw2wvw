@@ -650,10 +650,10 @@ export default class GW2Map{
 
 				// determine the objective tier
 				if(objective.yaks_delivered){
-					if(objective.yaks_delivered >= 80){
+					if(objective.yaks_delivered >= 140){
 						objective.tier = 3;
 					}
-					else if(objective.yaks_delivered >= 40){
+					else if(objective.yaks_delivered >= 60){
 						objective.tier = 2;
 					}
 					else if(objective.yaks_delivered >= 20){

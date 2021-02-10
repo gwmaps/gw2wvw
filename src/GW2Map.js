@@ -257,15 +257,14 @@ export default class GW2Map{
 		Object.keys(this.layers).forEach(layer => {
 			let el = this.layers[layer].options.pane;
 
-			if(zoom >= 5){
+			if(zoom >= 4){
 				PrototypeElement.removeClassName(el, 'half');
 			}
-			else if(zoom < 5 && zoom >= 3){
+			else if(zoom < 4 && zoom >= 2){
 				PrototypeElement.removeClassName(el, 'quarter');
 				PrototypeElement.addClassName(el, 'half');
 			}
-
-			else if(zoom < 3 && zoom >= 1){
+			else if(zoom < 2 && zoom >= 1){
 				PrototypeElement.removeClassName(el, 'half');
 				PrototypeElement.removeClassName(el, 'invis');
 				PrototypeElement.addClassName(el, 'quarter');

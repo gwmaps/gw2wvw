@@ -132,7 +132,7 @@ export default class GW2GeoJSON{
 
 		// hack for obsidian sanctum, which is labelled weirdly within EB
 		if(map.id === 899){
-			map.label_coord = [11600, 13400];
+			map.label_coord = [11500, 13400];
 		}
 
 		// https://github.com/arenanet/api-cdi/issues/334
@@ -305,6 +305,8 @@ export default class GW2GeoJSON{
 		objectives.forEach(objective => {
 
 			if(objective.type === 'spawn'){
+				objective.label_coord[1] -= 40; // move the label up a bit to not interfere with sector label
+
 				this._addFeature('map_label', objective.id, mapID, objective.name, {
 					type     : objective.type,
 					sector   : objective.sector_id,

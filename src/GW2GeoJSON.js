@@ -130,6 +130,11 @@ export default class GW2GeoJSON{
 			map.label_coord = null;
 		}
 
+		// hack for obsidian sanctum, which is labelled weirdly within EB
+		if(map.id === 899){
+			map.label_coord = [11600, 13400];
+		}
+
 		// https://github.com/arenanet/api-cdi/issues/334
 		this._addFeature('map_label', map.id, map.id, map.name, {
 			min_level     : map.min_level,

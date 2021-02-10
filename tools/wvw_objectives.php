@@ -46,19 +46,14 @@ foreach($apiObjectives as $o){
 		[$x, $y, ] = $o['coord'];
 		$o['coord'] = [(int)round($x), (int)round($y)];
 	}
-	else{
-
-		if($o['type'] === 'Spawn'){
-			continue;
-		}
-
+	else if($o['type'] !== 'Spawn'){
 		$o['coord'] = $fixtures[$o['id']];
 	}
 
-#	if(isset($o['label_coord'])){
-#		[$x, $y, ] = $o['label_coord'];
-#		$o['label_coord'] = [(int)round($x), (int)round($y)];
-#	}
+	if(isset($o['label_coord'])){
+		[$x, $y, ] = $o['label_coord'];
+		$o['label_coord'] = [(int)round($x), (int)round($y)];
+	}
 
 	// assign localized names
 	$names = ['en' => $o['name']];
@@ -75,9 +70,27 @@ foreach($apiObjectives as $o){
 	// unset stuff
 	$mapID = $o['map_id'];
 
-	unset($o['map_id'], $o['map_type'], $o['upgrade_id'], $o['marker'], $o['label_coord']);
+	unset($o['map_id'], $o['map_type'], $o['upgrade_id'], $o['marker']);
 
 	ksort($o);
+
+	if($o['type'] === 'spawn'){
+
+		if(in_array($o['sector_id'], [850, 993, 974, 1350, 1494])){
+			$o['color'] = 'green';
+		}
+		elseif(in_array($o['sector_id'], [836, 980, 1000, 1311, 1507])){
+			$o['color'] = 'blue';
+		}
+		elseif(in_array($o['sector_id'], [845, 977, 997, 1343, 1492])){
+			$o['color'] = 'red';
+		}
+
+		unset($o['chat_link']);
+	}
+	else{
+		unset($o['label_coord']);
+	}
 
 	$objectives['objectives'][$mapID][] = $o;
 }

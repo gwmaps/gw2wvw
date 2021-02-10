@@ -148,7 +148,6 @@ export default class GW2GeoJSON{
 			this._objectives(GW2_WVW_OBJECTIVES[map.id], map.id);
 		}
 
-
 		if(this.extraMarkers.length){
 			this.extraMarkers.forEach(layer => {
 
@@ -299,6 +298,17 @@ export default class GW2GeoJSON{
 	_objectives(objectives, mapID){
 
 		objectives.forEach(objective => {
+
+			if(objective.type === 'spawn'){
+				this._addFeature('map_label', objective.id, mapID, objective.name, {
+					type     : objective.type,
+					sector   : objective.sector_id,
+					layertype: 'label',
+				}, objective.label_coord);
+
+				return;
+			}
+
 			this._addFeature('objective_icon', objective.id, mapID, objective.name, {
 				type     : objective.type,
 				sector   : objective.sector_id,

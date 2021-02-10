@@ -58,6 +58,20 @@
 				"type": "tower"
 			},
 			{
+				"id": "38-124",
+				"label_coord": [10530, 13228],
+				"name": {
+					"de": "Hügel von",
+					"en": "Hill",
+					"es": "Colina",
+					"fr": "- Colline",
+					"zh": "山丘"
+				},
+				"sector_id": 845,
+				"type": "spawn",
+				"color": "red"
+			},
+			{
 				"chat_link": "[&DAMAAAAmAAAA]",
 				"coord": [9604, 15130],
 				"id": "38-3",
@@ -338,6 +352,20 @@
 				"type": "camp"
 			},
 			{
+				"id": "38-130",
+				"label_coord": [11758, 15520],
+				"name": {
+					"de": "Hügel von",
+					"en": "Hill",
+					"es": "Colina",
+					"fr": "- Colline",
+					"zh": "山丘"
+				},
+				"sector_id": 836,
+				"type": "spawn",
+				"color": "blue"
+			},
+			{
 				"chat_link": "[&DBIAAAAmAAAA]",
 				"coord": [10189, 14082],
 				"id": "38-18",
@@ -350,6 +378,20 @@
 				},
 				"sector_id": 893,
 				"type": "tower"
+			},
+			{
+				"id": "38-131",
+				"label_coord": [9259, 15498],
+				"name": {
+					"de": "Hügel von",
+					"en": "Hill",
+					"es": "Colina",
+					"fr": "- Colline",
+					"zh": "山丘"
+				},
+				"sector_id": 850,
+				"type": "spawn",
+				"color": "green"
 			}
 		],
 		"968": [
@@ -478,6 +520,20 @@
 				},
 				"sector_id": 1163,
 				"type": "resource"
+			},
+			{
+				"id": "968-127",
+				"label_coord": [7869, 8598],
+				"name": {
+					"de": "Überwucherte Docks",
+					"en": "Overgrown Docks",
+					"es": "Muelles de Tierras Frondosas",
+					"fr": "Quais d'Embroussaille",
+					"zh": "野性码头"
+				},
+				"sector_id": 1494,
+				"type": "spawn",
+				"color": "green"
 			},
 			{
 				"chat_link": "[&DFMAAADIAwAA]",
@@ -634,6 +690,34 @@
 				"type": "resource"
 			},
 			{
+				"id": "968-128",
+				"label_coord": [8462, 11127],
+				"name": {
+					"de": "Frostfels-Docks",
+					"en": "Frostreach Docks",
+					"es": "Muelles de Lindescarcha",
+					"fr": "Quais du Promontoire gelé",
+					"zh": "霜原码头"
+				},
+				"sector_id": 1507,
+				"type": "spawn",
+				"color": "blue"
+			},
+			{
+				"id": "968-129",
+				"label_coord": [6445, 11245],
+				"name": {
+					"de": "Ödland-Docks",
+					"en": "Badlands Docks",
+					"es": "Muelles de Tierras Inhóspitas",
+					"fr": "Quais de Morneterre",
+					"zh": "劣土码头"
+				},
+				"sector_id": 1492,
+				"type": "spawn",
+				"color": "red"
+			},
+			{
 				"chat_link": "[&DFwAAADIAwAA]",
 				"coord": [7557, 9392],
 				"id": "968-92",
@@ -762,6 +846,20 @@
 				"type": "ruins"
 			},
 			{
+				"id": "1099-107",
+				"label_coord": [12009, 11771],
+				"name": {
+					"de": "Grenze von",
+					"en": "Border",
+					"es": "Frontera",
+					"fr": "- Frontière",
+					"zh": "边境"
+				},
+				"sector_id": 1311,
+				"type": "spawn",
+				"color": "blue"
+			},
+			{
 				"chat_link": "[&DHcAAABLBAAA]",
 				"coord": [10447, 10762],
 				"id": "1099-119",
@@ -774,6 +872,20 @@
 				},
 				"sector_id": 1421,
 				"type": "ruins"
+			},
+			{
+				"id": "1099-108",
+				"label_coord": [9640, 11765],
+				"name": {
+					"de": "Grenze von",
+					"en": "Border",
+					"es": "Frontera",
+					"fr": "- Frontière",
+					"zh": "边境"
+				},
+				"sector_id": 1350,
+				"type": "spawn",
+				"color": "green"
 			},
 			{
 				"chat_link": "[&DG0AAABLBAAA]",
@@ -900,6 +1012,20 @@
 				},
 				"sector_id": 1296,
 				"type": "camp"
+			},
+			{
+				"id": "1099-117",
+				"label_coord": [10817, 9157],
+				"name": {
+					"de": "Zitadelle von",
+					"en": "Citadel",
+					"es": "Ciudadela",
+					"fr": "- Citadelle",
+					"zh": "堡垒"
+				},
+				"sector_id": 1343,
+				"type": "spawn",
+				"color": "red"
 			}
 		],
 		"96": [
@@ -930,6 +1056,20 @@
 				},
 				"sector_id": 990,
 				"type": "tower"
+			},
+			{
+				"id": "96-103",
+				"label_coord": [14830, 14042],
+				"name": {
+					"de": "Grenze von",
+					"en": "Border",
+					"es": "Frontera",
+					"fr": "- Frontière",
+					"zh": "边境"
+				},
+				"sector_id": 974,
+				"type": "spawn",
+				"color": "green"
 			},
 			{
 				"chat_link": "[&DCAAAABgAAAA]",
@@ -1042,6 +1182,34 @@
 				},
 				"sector_id": 985,
 				"type": "camp"
+			},
+			{
+				"id": "96-111",
+				"label_coord": [14102, 11677],
+				"name": {
+					"de": "Zitadelle von",
+					"en": "Citadel",
+					"es": "Ciudadela",
+					"fr": "- Citadelle",
+					"zh": "堡垒"
+				},
+				"sector_id": 980,
+				"type": "spawn",
+				"color": "blue"
+			},
+			{
+				"id": "96-112",
+				"label_coord": [13383, 14026],
+				"name": {
+					"de": "Grenze von",
+					"en": "Border",
+					"es": "Frontera",
+					"fr": "- Frontière",
+					"zh": "边境"
+				},
+				"sector_id": 977,
+				"type": "spawn",
+				"color": "red"
 			},
 			{
 				"chat_link": "[&DDQAAABgAAAA]",
@@ -1186,6 +1354,20 @@
 				"type": "tower"
 			},
 			{
+				"id": "95-103",
+				"label_coord": [7662, 14682],
+				"name": {
+					"de": "Grenze von",
+					"en": "Border",
+					"es": "Frontera",
+					"fr": "- Frontière",
+					"zh": "边境"
+				},
+				"sector_id": 997,
+				"type": "spawn",
+				"color": "red"
+			},
+			{
 				"chat_link": "[&DCAAAABfAAAA]",
 				"coord": [8087, 13521],
 				"id": "95-32",
@@ -1296,6 +1478,34 @@
 				},
 				"sector_id": 1005,
 				"type": "camp"
+			},
+			{
+				"id": "95-111",
+				"label_coord": [6934, 12317],
+				"name": {
+					"de": "Zitadelle von",
+					"en": "Citadel",
+					"es": "Ciudadela",
+					"fr": "- Citadelle",
+					"zh": "堡垒"
+				},
+				"sector_id": 993,
+				"type": "spawn",
+				"color": "green"
+			},
+			{
+				"id": "95-112",
+				"label_coord": [6215, 14666],
+				"name": {
+					"de": "Grenze von",
+					"en": "Border",
+					"es": "Frontera",
+					"fr": "- Frontière",
+					"zh": "边境"
+				},
+				"sector_id": 1000,
+				"type": "spawn",
+				"color": "blue"
 			},
 			{
 				"chat_link": "[&DDQAAABfAAAA]",

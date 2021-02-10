@@ -79,6 +79,7 @@ export default class GW2Map{
 	matches = {};
 	objectiveElements = {};
 	sectorElements = {};
+	labelElements = {};
 	guilds = {};
 	currentMatch;
 
@@ -353,6 +354,12 @@ export default class GW2Map{
 			return;
 		}
 
+		if(p.type === 'spawn'){
+			layer.bindPopup('');
+
+			return;
+		}
+
 		// add icon
 		if(p.layertype === 'icon'){
 			content += p.icon
@@ -468,16 +475,21 @@ export default class GW2Map{
 		}
 		// the icon is actually a label text
 		else if(p.layertype === 'label'){
-			iconParams.html       = p.name;
+			iconParams.html       = p.type === 'spawn' ? '' : p.name;
 			iconParams.iconAnchor = 'auto';
 
-			icon = new LabelIcon(iconParams);
-
-			return new LabelMarker(coords, {
+			let marker = new LabelMarker(coords, {
 				pane: pane,
 				title: p.name,
-				icon: icon
+				icon: new LabelIcon(iconParams)
 			});
+
+			// assign spawn area labels
+			if(p.type === 'spawn'){
+				this.labelElements[p.id] = marker;
+			}
+
+			return marker;
 		}
 		// else create a div icon with a classname depending on the type
 		else{
@@ -519,26 +531,11 @@ export default class GW2Map{
 		let p = feature.properties;
 
 		if(['region_poly', 'map_poly', 'sector_poly'].includes(pane)){
-			let color = this.options.colors[pane] || 'rgb(255, 255, 255)';
-
-			// fixed sector colors
-			if(pane === 'sector_poly'){
-				if([850, 993, 974, 1350].includes(feature.id)){
-					color = this.options.colors.sector_team.green;
-				}
-				else if([836, 980, 1000, 1311].includes(feature.id)){
-					color = this.options.colors.sector_team.blue;
-				}
-				else if([845, 977, 997, 1343].includes(feature.id)){
-					color = this.options.colors.sector_team.red;
-				}
-			}
-
 			return {
 				pane: pane,
 				stroke: true,
 				opacity: 0.6,
-				color: color,
+				color: this.options.colors[pane] || 'rgb(255, 255, 255)',
 				weight: 2,
 				interactive: false,
 			}
@@ -630,7 +627,20 @@ export default class GW2Map{
 		json.maps.forEach(map => {
 			map.objectives.forEach(objective => {
 
+				// determine color
+				let owner = 'neutral';
+
+				if(['Green', 'Blue', 'Red'].includes(objective.owner)){
+					owner = objective.owner.toLowerCase();
+				}
+
+				// not a valid objective
 				if(!this.objectiveElements[objective.id]){
+					// is it a spawn area label?
+					if(this.labelElements[objective.id]){
+						this._spawnArea(this.labelElements[objective.id], owner);
+					}
+
 					return;
 				}
 
@@ -655,13 +665,6 @@ export default class GW2Map{
 					}
 				}
 
-				// determine color
-				let owner = 'neutral';
-
-				if(['Green', 'Blue', 'Red'].includes(objective.owner)){
-					owner = objective.owner.toLowerCase();
-				}
-
 				// fetch & update the objective
 				let objectiveElement = this.objectiveElements[objective.id];
 
@@ -677,10 +680,7 @@ export default class GW2Map{
 				objectiveElement.setPopupContent(this._objectivePopup(objectiveElement.feature.properties, owner, objective));
 
 				// update the sector color
-				this.sectorElements[objectiveElement.feature.properties.sector].setStyle({
-					color: this.options.colors.sector_team[owner],
-				});
-
+				this._setSectorColor(objectiveElement.feature.properties.sector, owner);
 			});
 		});
 
@@ -713,8 +713,6 @@ export default class GW2Map{
 	_objectivePopup(properties, color, data){
 		let content = '<div class="gw2map-popup-icon gw2map-' + properties.type + '-icon ' + color + '"></div>'
 			+ this._wikiLinkName(properties.name);
-
-//		console.log(properties, color, data);
 
 		if(!data){
 			return content;
@@ -762,6 +760,42 @@ export default class GW2Map{
 		}
 
 		return content;
+	}
+
+	/**
+	 * @param labelElement
+	 * @param color
+	 * @private
+	 */
+	_spawnArea(labelElement, color){
+		let match = this.matches[this.currentMatch];
+
+		labelElement.setIcon(new LabelIcon({
+			html: GW2_WVW_WORLDS[match.worlds[color]].name[this.options.lang],
+			iconAnchor: 'auto',
+			iconSize   : null,
+			popupAnchor: 'auto',
+			className: 'gw2map-label gw2map-map-label ' + color,
+		}));
+
+		let popup = '';
+
+		match.all_worlds[color].forEach(id => popup += GW2_WVW_WORLDS[id].name[this.options.lang] + '<br/>');
+
+		labelElement.setPopupContent(popup);
+
+		this._setSectorColor(labelElement.feature.properties.sector, color);
+	}
+
+	/**
+	 * @param {number} sectorID
+	 * @param {string} color
+	 * @private
+	 */
+	_setSectorColor(sectorID, color){
+		this.sectorElements[sectorID].setStyle({
+			color: this.options.colors.sector_team[color],
+		});
 	}
 
 }

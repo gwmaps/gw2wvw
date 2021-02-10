@@ -690,6 +690,8 @@ export default class GW2Map{
 	 * @private
 	 */
 	_fetchGuild(guildID){
+		this.guilds[guildID] = null;
+
 		fetch(this.options.apiBase + '/v2/guild/' + guildID)
 			.then(response => {
 				if(response.ok){
@@ -698,7 +700,7 @@ export default class GW2Map{
 
 				throw new Error(response.statusText);
 			})
-			.then(json => this.guilds[guildID] = {name: json.name, tag: json.tag})
+			.then(json => this.guilds[guildID] = json.name + ' [' + json.tag + ']')
 			.catch(error => console.log('(╯°□°）╯彡┻━┻ guild ', error));
 	}
 
@@ -726,8 +728,7 @@ export default class GW2Map{
 		}
 
 		if(this.guilds[data.claimed_by]){
-			let guild = this.guilds[data.claimed_by];
-			content += '<br/>' + guild.name + ' [' + guild.tag + ']';
+			content += '<br/>' + this.guilds[data.claimed_by];
 		}
 
 		if(data.yaks_delivered){
